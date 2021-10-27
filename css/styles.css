@@ -1,3 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+body{
+    background-color: var(--pampas-white);
+    transition: background-color 1s ease;
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: var(--body-text-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--headlines-color);
+    font-weight: 400;
+}
+    h1{
+        font-size: calc(76px + 1.5vw);
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+    h2
+    {
+        font-size: 72px;
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+    h3
+    {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    h4
+    {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -0.5px;
+    }
+    h5
+    {
+        font-size: 32px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h6
+    {
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+@media only screen and (min-width: 920px) and (max-width: 1440px){
+    h1{
+        font-size: 72px;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+    h2
+    {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+    h3
+    {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    h4
+    {
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: -0.5px;
+    }
+    h5
+    {
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h6
+    {
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+    h1
+    {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+    h2
+    {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    h3
+    {
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: -0.5px;
+    }
+    h4
+    {
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h5
+    {
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h6
+    {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h1
+    {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    h2
+    {
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: -0.5px;
+    }
+    h3
+    {
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h4
+    {
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    h5
+    {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0px;
+    }
+    h6
+    {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 0px;
+    }
+}
+
 .dropdown-item{
     line-height: 40px !important;
 }
@@ -53,6 +216,8 @@ h2{
     --royal-blue: #3e5e8c;
     --pure-black: #000000;
     --pure-white: #ffffff;
+    --body-text-color: #282A28;
+    --headlines-color: #0D2620;
 
 }
 .animated-icon1, .animated-icon2, .animated-icon3 {
@@ -265,15 +430,7 @@ h2 span{
     overflow: hidden;
     height: 70px;
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
-body{
-    background-color: var(--pampas-white);
-    transition: background-color 1s ease;
-    font-family: 'DM Sans', sans-serif;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-}
+
 .fixed-position {
     position: fixed;
  }
@@ -580,12 +737,8 @@ body{
     align-items: center;
 }
 .headline-container h1{
-    letter-spacing: -3px;
-    font-weight: 200;
     color: #fff;
-    font-size: 96px;
     padding-left: 40px;
-    line-height: 1 !important;
 }
 .third-section .col-md-4{
     display: flex;
@@ -707,6 +860,9 @@ p{
 .news-blog{
     padding-top: 2%;
     padding-bottom: 4%;
+}
+.news-blog h2{
+    color: #fff;
 }
 .news-breakline{
     width: 100%;
@@ -956,14 +1112,6 @@ p{
     .breakline{
         display: none;
     }
-    .headline-container h1{
-        font-size: 64px !important;
-        letter-spacing: -2px;
-        padding-left:0;
-    }
-    h2{
-       font-size: 48px !important;
-    }
     .logo-carousel-image {
         background-color: #ffffff40;
         object-fit: scale-down;
@@ -1069,3 +1217,6 @@ p{
     transition: 0.5s background-color, 0.5s box-shadow;
     box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
   }
+
+
+  

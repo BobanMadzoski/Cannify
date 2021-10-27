@@ -7,61 +7,27 @@ body{
     height: 100vh;
     overflow-x: hidden;
     color: var(--body-text-color);
+
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--headlines-color);
     font-weight: 400;
 }
     h1{
-        font-size: calc(76px + 1.5vw);
+        font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (1600 - 300))) !important;
         line-height: 1;
         letter-spacing: -2px;
     }
     h2
     {
-        font-size: 72px;
+        font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (1600 - 300))) !important;
         line-height: 1;
         letter-spacing: -1.5px;
     }
     h3
     {
-        font-size: 64px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-    h4
-    {
-        font-size: 48px;
-        line-height: 1;
-        letter-spacing: -0.5px;
-    }
-    h5
-    {
-        font-size: 32px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-    h6
-    {
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-@media only screen and (min-width: 920px) and (max-width: 1440px){
-    h1{
-        font-size: 72px;
-        line-height: 1;
-        letter-spacing: -2px;
-    }
-    h2
-    {
-        font-size: 64px;
-        line-height: 1;
-        letter-spacing: -1.5px;
-    }
-    h3
-    {
-        font-size: 48px;
+        font-size: calc(48px + 0.2vw);
+        font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))) !important;
         line-height: 1;
         letter-spacing: -1px;
     }
@@ -75,91 +41,18 @@ h1, h2, h3, h4, h5, h6 {
     {
         font-size: 24px;
         line-height: 1.4;
-        letter-spacing: 0px;
-    }
-    h6
-    {
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 920px) {
-    h1
-    {
-        font-size: 64px;
-        line-height: 1;
-        letter-spacing: -1.5px;
-    }
-    h2
-    {
-        font-size: 48px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-    h3
-    {
-        font-size: 36px;
-        line-height: 1;
         letter-spacing: -0.5px;
+        font-weight: 500;
     }
-    h4
-    {
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-    h5
+    h6
     {
         font-size: 18px;
         line-height: 1.4;
         letter-spacing: 0px;
+        font-weight: 500;
     }
-    h6
-    {
-        font-size: 16px;
-        line-height: 1.6;
-        letter-spacing: 0px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    h1
-    {
-        font-size: 48px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-    h2
-    {
-        font-size: 36px;
-        line-height: 1;
-        letter-spacing: -0.5px;
-    }
-    h3
-    {
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-    h4
-    {
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-    }
-    h5
-    {
-        font-size: 16px;
-        line-height: 1.6;
-        letter-spacing: 0px;
-    }
-    h6
-    {
-        font-size: 14px;
-        line-height: 1.6;
-        letter-spacing: 0px;
-    }
-}
+
+
 
 .dropdown-item{
     line-height: 40px !important;
@@ -168,12 +61,6 @@ h1, h2, h3, h4, h5, h6 {
     border: none !important;
     background: #0f2d28!important;
     border-radius: 3px !important;
-}
-h2{
-    font-size: 64px;
-    letter-spacing: -1.5px;
-    line-height: 1;
-    font-weight: 400;
 }
 .color-green{
     background-color:var(--green-haze);
@@ -421,9 +308,6 @@ h2{
 .headline-container span{
     display: inline-block;
     overflow: hidden;
-}
-h4{
-    letter-spacing: -0.8px;
 }
 h2 span{
     display: inline-block;
@@ -940,14 +824,11 @@ p{
     font-weight: 300;
     padding-top: 15px;
 }
-.carousel-cell h4{
-    font-size: 25px;
+.carousel-cell h6{
     color:#ffffff;
     font-weight: 300;
     margin-bottom:35px;
-    padding-top: 15%;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
+    padding-top: 10%;
 }
 .carousel-cell a{
     color: #ffffff;

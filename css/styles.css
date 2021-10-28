@@ -659,9 +659,6 @@ p{
     margin-bottom: 20px;
     min-height: 350px;
 }
-.qualities h4{
-    margin-bottom: 20px;
-}
 .qualities img{
     height: 66px;
     width: 66px;
@@ -669,6 +666,28 @@ p{
     background-color: var(--pampas-white);
     padding: 15px;
     margin-bottom: 30px;
+}
+.qualities-horizontal {
+    background-color: #C9CEC9;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.qualities-horizontal img{
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    background-color: var(--pampas-white);
+    padding: 15px;
+}
+.qualities-text p{
+    padding-left: 20px;
+    margin: 0px;
+}
+.qualities-text h5{
+    margin-bottom: 15px;    
+    padding-left: 20px;
 }
 .products-section p{
     font-weight: 300;
@@ -1105,3 +1124,103 @@ p{
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* COMPONENT STYLES*/
+
+  .product-card-header img{
+      object-fit: cover;
+        object-position: center center;
+  }
+  .product-card-header{
+      padding: 15%;
+  }
+  .product-card{
+      background-color:#EFEEE9;
+      padding: 25px 25px;
+  }
+  .product-title-block{
+      display: flex;
+      padding: 13px;
+      background-color: #C9CEC9;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 3px;
+  }
+  .product-title{
+      font-size: 20px;
+      font-weight: 600;
+  }
+  .product-specs{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      margin: 0px;
+  }
+  .number{
+      font-weight: bold;
+  }
+  .info-list{
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+  }
+  .info-list li{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #DDDBD3;
+      padding: 5px 0px;
+      align-items: center;
+      font-size: 14px;
+  }
+  .info-list p{
+      color: #A8A8A8;
+      margin: 0px;
+  }
+  .price{
+      padding: 10px;
+      border-bottom: none !important;
+  }
+  .price p{
+      color: #717171;
+  }
+  .price span{
+    font-size: 20px;
+    color: #12463D;
+    font-weight: bold;
+  }
+  .product-info button{
+    color: #fff;
+    background-color: var(--green-haze);
+    padding: 20px 40px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .product-code{
+    border-bottom: none !important;
+    font-size: 14px;
+  }
+  .product-code span{
+    color: #076B4C;
+    font-weight: bold;
+  }
+  .code-name{
+      font-weight: bold;
+      color: #A8A8A8 !important;
+  }

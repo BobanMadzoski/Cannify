@@ -675,8 +675,6 @@ p{
     border-radius: 5px;
 }
 .qualities-horizontal img{
-    height: 66px;
-    width: 66px;
     border-radius: 50%;
     background-color: var(--pampas-white);
     padding: 15px;
@@ -1221,6 +1219,163 @@ p{
     font-weight: bold;
   }
   .code-name{
-      font-weight: bold;
-      color: #A8A8A8 !important;
+    font-weight: bold;
+    color: #A8A8A8 !important;
   }
+  .white-button{
+    padding: 13px;
+    background: #EFEEE9;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .white-button img{
+      padding: 5px;
+  }
+  .white-button .img-circle{
+    padding: 8px;
+    background-color: #E4E3DC;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.white-button span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #274840;
+    line-height: 1.6;
+}
+.white-button p{
+    font-size: 14px;
+    color: #A8A8A8;
+    line-height: 0;
+    margin: 0px;
+}
+.quantities{
+    background-color: #F5F4F0;
+    border-radius: 3px;
+}
+.customer-block{
+    background-color: #114139;
+    color: #fff;
+    display: flex;
+    padding: 30px;
+}
+.name-surname{
+    display: flex;
+    flex-direction: column;
+}
+.customer-img{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.name-surname p{
+    margin: 0px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+.name-surname h5{
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    margin: 0;
+}
+.name-surname .smaller-span{
+    font-size: 14px;
+    color: #ffffff80;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.quantities-list li{
+    border-bottom: 1px dashed #00000020;
+    list-style: none;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quantities-list ul{
+    list-style: none;
+    padding: 0px 30px;
+}
+.quantities-list .number{
+    font-size: 64px;
+    font-weight: 300;
+}
+.quantities-list span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.quantities-list ul li:last-child{
+    border-bottom: none;
+}
+.patient-card-body{
+    padding: 40px 25px;
+    color: #323232;
+}
+.patient-card-body h5{
+ padding-bottom: 20px;
+ margin: 0;
+}
+.patient-card-body p{
+    padding-bottom: 20px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.patient-card{
+    background-color: #EFEEE9;
+    border-radius: 3px;
+}
+.patient-card-body a{
+    color: #114139;
+    font-size: 18px;
+    font-weight: 600;
+}
+.research-horizontal{
+    background-color: #395A52;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.research-horizontal img{
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.research-text h5{
+    color: #FFF;
+    margin: 0px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+.research-text p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0px;
+}
+.download-card{
+    background-color: #C9CEC9;
+    padding: 20px;
+}
+.download-card-text h5{
+    margin: 0px;
+    color: #0D2620;
+}
+.download-card-text p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #282A28;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.download-breakline{
+    width: 100%;
+    border-bottom: 2px solid #E5E3DA;
+   padding-top: 10px;
+}

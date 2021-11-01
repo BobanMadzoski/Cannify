@@ -1312,11 +1312,8 @@ p{
 .history-years{
     font-size: 160px;
 }
-.first-number{
-    visibility: hidden;
-}
 .second-number{
-    color: #27484015;
+    color: var(--green-haze);
 }
 .history-progress-number span{
     font-size: 18px;
@@ -1353,6 +1350,12 @@ p{
     color: #000 !important;
     padding-top: 10px;
     margin: 0px !important;
+}
+.first-year-section{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
 }
 
   /* COMPONENT STYLES*/

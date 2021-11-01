@@ -603,6 +603,7 @@ h2 span{
 }
 p{
     font-size: 14px;
+    line-height: 1.6;
 }
 .qualities{
     background-color: var(--silver-sand);
@@ -1010,6 +1011,9 @@ p{
     .work-progress-number{
         display: none !important;
     }
+    .history-progress-number{
+        display: none !important;
+    }
     .nav-item > span{
         width: 100%;
         border-bottom: 1px solid #ffffff14;
@@ -1171,6 +1175,10 @@ p{
     background-color: var(--green-haze);
     height: 60vh;
 }
+.warehouse-breakline{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
 .warehouse-info{
     font-size: 14px;
     color: #fff;
@@ -1236,6 +1244,7 @@ p{
     margin-right: 20px;
     padding-left: 10px;
     border-left: 1px solid #00000020;
+    margin-bottom: 30%;
 }
 .personnel-cell img{
     margin-bottom: 20px;
@@ -1251,6 +1260,99 @@ p{
     font-size: 16px;
     color: #274840;
     font-weight: 600;
+}
+.global-section{
+    background-color: var(--green-haze);
+}
+.global-row{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.global-row h2{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.global-row p{
+    font-size: 14;
+    color: #ffffff80;
+    line-height: 1.6;
+}
+.symbol-column{
+    margin-right: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.symbol-column img{
+    width: 62px;
+    height: 75px;
+}
+.pharmacist-section{
+    background-color: var(--green-haze);
+    height: 50vh;
+}
+.history-section{
+    background-color: var(--pampas-dark);
+    padding-top: 20vh;
+}
+.history-info{
+    font-size: 14px;
+    color: #000;
+    line-height: 1.2;
+    z-index: 1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.history-info span{
+    font-weight: 600;
+}
+.history-row{
+    margin-bottom: 10%;
+}
+.history-years{
+    font-size: 160px;
+}
+.first-number{
+    visibility: hidden;
+}
+.second-number{
+    color: #27484015;
+}
+.history-progress-number span{
+    font-size: 18px;
+    color: #000;
+    line-height: 1;
+}
+.history-progress-number{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.history-progress-line{
+    border-left: 3px solid var(--pampas-white);
+    margin: 25px auto;
+    height: 18%;
+}
+.year-info{
+    padding: 40px 40px;
+    border-radius: 5px;
+    background-color: var(--pampas-white);
+    margin: 25px;
+}
+.year-info p{
+    font-size: 14px;
+    color: #00000040;
+    margin-bottom: 25px;
+}
+.year-info h5{
+    margin: 0px;
+}
+.year-description{
+    font-size: 14px;
+    color: #000 !important;
+    padding-top: 10px;
+    margin: 0px !important;
 }
 
   /* COMPONENT STYLES*/

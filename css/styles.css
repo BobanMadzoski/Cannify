@@ -322,6 +322,10 @@ h2 span{
 .header-section{
     background-color: var(--green-haze);
 }
+.about-us-header-section{
+    background-color: var(--green-haze);
+    height: 70vh;
+}
 .work-process-section{
     background-color: var(--green-haze);
 }
@@ -1008,6 +1012,43 @@ p{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .warehouse-info{
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.2;
+        z-index: 1;
+        margin-top: 2%;
+        padding: 0 30px;    
+    }
+    .customer-block{
+        background-color: var(--green-haze);
+        color: #fff;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .customer-img{
+        display: flex;
+        align-items: center;
+        margin-right: 0px !important;
+    }
+    .quantities-list li{
+        border-bottom: 1px dashed #00000020;
+        list-style: none;
+        padding: 40px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .quantities-list .number{
+        font-size: 32px !important;
+    }
+    .headline-container h1{
+        padding-left: 0px !important;
+    }
     .work-progress-number{
         display: none !important;
     }
@@ -1133,10 +1174,22 @@ p{
     transition: 0.5s background-color, 0.5s box-shadow;
     box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
   }
+  .first-paragraph-column p{
+      font-size: 16px;
+  }
+  .map-column{
+      margin-bottom: 5%;
+  }
+  .map-column span{
+      font-weight: 600  ;
+  }
 .work-info{
     font-size: 14px;
     color: #fff;
     line-height: 1.2;
+}
+.work-info span{
+    font-weight: 600;
 }
 .work-process-row{
     margin-top: 50px;
@@ -1205,6 +1258,9 @@ p{
 .quantities-section{
     padding: 20vh 2%;
 }
+.quantities-text{
+    margin-bottom: 50px;
+}
 .quantities-text h2{
     padding-bottom: 20px;
     margin: 0;
@@ -1213,7 +1269,7 @@ p{
     padding-bottom: 35px;
     margin: 0;
 }
-.quantities-button{
+.marginless-button{
     margin: 0;
 }
 .cannify-team-section{
@@ -1356,6 +1412,17 @@ p{
         height: 100vh;
         flex-direction: column;
         justify-content: center;
+}
+.company-values-section{
+    margin-top: 10%;
+}
+.text-column h2{
+    margin: 0px;
+    padding-bottom: 20px;
+}
+.text-column p{
+    margin: 0px;
+    padding-bottom: 35px;
 }
 
   /* COMPONENT STYLES*/
@@ -1601,7 +1668,7 @@ p{
 .about-us-bg-video{
     display: flex;
     position: relative;
-    height: 60vh;
+    height: 70vh;
 }
 .about-us-bg-video:before {
     content: '';

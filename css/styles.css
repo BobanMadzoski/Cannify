@@ -1668,7 +1668,7 @@ p{
 .about-us-bg-video{
     display: flex;
     position: relative;
-    height: 70vh;
+    height: 65vh;
 }
 .about-us-bg-video:before {
     content: '';
@@ -1682,3 +1682,51 @@ p{
 .headline-block{
     max-width: 60%;
 }
+
+
+
+
+.panel {
+    background: pink;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .panel2 {
+    background: orange;
+  }
+  
+  .panel3 {
+    background: salmon;
+  }
+  
+  .panel-content {
+    padding: 2rem;
+    border: 1px solid black;
+    width: 100%;
+    height: calc(100vh - 2rem*2);
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .horizontal-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .block {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -220,4 +220,12 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-//
+//FAQ CLOSED
+
+//LIST ACTIVE CLASS
+$('.list-section-selector li').click(function(e) {
+  e.preventDefault();
+  $('li').removeClass('active');
+  $(this).addClass('active');
+});
+//LIST ACTIVE CLASS CLOSED

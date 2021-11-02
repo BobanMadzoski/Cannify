@@ -326,6 +326,10 @@ h2 span{
     background-color: var(--green-haze);
     height: 70vh;
 }
+.cannify-products-header-section{
+    background-color: var(--green-haze);
+    height: 80vh;
+}
 .work-process-section{
     background-color: var(--green-haze);
 }
@@ -579,6 +583,24 @@ h2 span{
     color: #fff;
     padding-left: 40px;
 }
+.cannify-products-headline-container{
+    z-index: 8;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+.cannify-products-headline-container h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cannify-products-headline-container p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
 .third-section .col-md-4{
     display: flex;
     flex-direction: column;
@@ -632,6 +654,7 @@ p{
     display: flex;
     align-items: center;
     border-radius: 5px;
+    margin: 10px;
 }
 .qualities-horizontal img{
     border-radius: 50%;
@@ -691,6 +714,9 @@ p{
 .partners-section p{
     font-weight: 400;
     font-size: 14px;
+}
+.partners-logo{
+    padding:20px 0px;
 }
 .company-news-section{
     background-color: var(--green-haze);
@@ -1146,8 +1172,8 @@ p{
     }
 }
 .magnetic {
-    margin: -100px;
-    padding: 100px;
+    margin: -50px;
+    padding: 50px;
     display: inline-block;
     border-radius: 50%;
     /*border: 1px solid #000; //use this for debugging*/
@@ -1427,6 +1453,12 @@ p{
 .horizontal-section-color{
     background-color: var(--pampas-dark);
 }
+.cannify-product-qualities-section{
+    margin-top: 15%;
+}
+.cannify-product-qualities-section h2{
+    margin-bottom: 10px;
+}
 
   /* COMPONENT STYLES*/
   .product-card-header img{
@@ -1650,29 +1682,50 @@ p{
 .download-card{
     background-color: var(--silver-sand);
     padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
 }
 .download-card-text h5{
     margin: 0px;
     color: var(--deep-haze)
 }
 .download-card-text p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: #282A28;
     margin: 0px;
     padding-bottom: 20px;
-    padding-top: 20px;
+}
+.download-card-text a{
+    color: #274840;
+    font-weight: 600;
+    font-size: 18px;
 }
 .download-breakline{
     width: 100%;
     border-bottom: 2px solid #E5E3DA;
    padding-top: 10px;
 }
+.cannify-oil-bg-video{
+    display: flex;
+    position: relative;
+    height: 75vh;
+}
+.cannify-oil-bg-video:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.272);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 .about-us-bg-video{
     display: flex;
     position: relative;
     height: 65vh;
 }
+
 .about-us-bg-video:before {
     content: '';
     position: absolute;
@@ -1683,5 +1736,105 @@ p{
     left: 0;
   }
 .headline-block{
+    max-width: 100%;
+}
+.for-doctors-headline-block{
     max-width: 60%;
+}
+.for-doctors-headline-block p{
+    font-size: 16px;
+    color: #fff;
+}
+.cannify-shop-for-doctors{
+    margin-top: 10%;
+}
+.list-section-selector{
+    list-style: none;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+.section-selector{
+    display: flex;
+    background-color: var(--silver-sand);
+    border-radius: 3px;
+    padding: 25px;
+}
+.list-section-selector a{
+    color: #000;
+    text-decoration: none;
+}
+.list-section-selector > li{
+    border-left: 1px solid #00000020;
+    padding: 7px;
+}
+.active{
+    border-left: 2px solid var(--green-haze) !important;
+}
+.section-selector-column span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.section-selector-column p{ 
+    font-size: 14px;
+}
+.shop-contact-block{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: var(--silver-sand);
+    margin-top: 20px;
+    border-radius: 3px;
+}
+.shop-contact-block h6{
+    color: #000;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+.shop-contact-block a{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+}
+.shop-contact-block a:hover{
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.shop-contact-block span{
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1;
+}
+.shop-contact-block p{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1;
+}
+.shop-contact-block button{
+    margin: 0px;
+    margin-top: 20px;
+}
+.list-info-column span{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 1;
+}
+.list-info-column p{
+    font-size: 14px;
+    line-height: 1;
+}
+.prescribing-medical-cannabis-block p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.prescribing-medical-cannabis-block button{
+    margin: 5px 0px;
+    width: 100%;
 }

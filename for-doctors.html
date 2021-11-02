@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Distribution of Medical Cannabis">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Boban Madzoski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1b3b36">
+    <title>Cannify - Medical Cannabis Importer</title>
+
+
+    <link rel="icon" href="favicon-2.svg">
+   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+</head>
+<body>
+ <!-- HEADER -->
+    <div class="preloader"><div class="loading-symbol-box"></div><div class="intro-content" class="loading-symbol"><img width="80px" height="80px" src="./img/cannify-symbol.svg" alt="Cannify Symbol"></img><p class="loading-paragraph">® Cannify Pharma GbmH</p></div></div>
+    <span id="circle" class="circle"></span>
+    <section class="header-section cannify-products-header-section section-padding">
+      <div class="container-fluid p-0">
+          <div class="header-above">
+              <div class="header-contact">
+                  <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> +49 (0) 241 705 3991</a></span>
+
+                  <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> info@cannify.de</a></span>
+              </div>
+              <div class="header-buttons">
+                  <button class="btn-primary-header login-circle">HCP Login</button>
+                  <button class="btn-primary-header">Cannify Shop</button>
+                  <button class="btn-primary-header" type="button">De</div>
+              </div>
+          </div>
+          <div class="header-breakline"></div>
+          </div>
+          <nav class="navbar navbar-expand-lg" style="z-index: 9;">
+              <div class="container-fluid p-0">
+              <a href="index.html" class="navbar-brand"><img width="190" height="50px" src="./img/cannify-logo-white.png" alt="Cannify Logo"></a>
+        
+              <button id="mob-menu" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <div class="animated-icon1"><span></span><span></span><span></span></div>
+              </button>
+              </button>
+                <div class="collapse navbar-collapse navbar-content" id="navmenu">
+                <ul class="navbar-nav navitem-text" >
+                    <div class="nav-breakline"></div>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                    <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img id="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+
+                          <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="./about-us.html">About Us</a>
+                              <a class="dropdown-item" href="#">GMP Certificate</a>
+                              <a class="dropdown-item" href="#">Downloads</a>
+                              <a class="dropdown-item" href="#">Careers</a>
+                            </div>
+
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                    <a href="#" class="nav-link nav-link-ltr">Products</a>
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img id="dropdown-icon2" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                          
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">General Information</a>
+                              <a class="dropdown-item" href="#">For Patients</a>
+                              <a class="dropdown-item" href="#">For Pharmacist</a>
+                              <a class="dropdown-item" href="#">For Doctors</a>
+                            </div>
+                          </span>
+                      </span>
+                    </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr">Insights</a>
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr">Contact</a>
+                          </span>
+                      </span>
+                  </li>
+                </ul>
+                <!-- Collapsed-Show -->
+                <div class="header-buttons only-collapsed collapsed-buttons">
+                    <div class="menu-button">
+                  <button class="btn-primary-header login-circle">HCP Login</button>
+              </div>
+              <div class="menu-button">
+                  <button class="btn-primary-header">Cannify Shop</button>
+              </div>
+              <div class="menu-button">
+                  <button class="btn-primary-header" type="button" href="index-de.html" >De</div>
+              </div>
+                  <div class="only-collapsed collapsed-contact">
+                      <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg> +49 (0) 241 705 3991</a></span>
+                    <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg> info@cannify.de</a></span>
+                </div>
+              </div>
+              <!-- /Collapsed-Show -->
+              </div>
+          </nav>
+          <div class="cannify-oil-bg-video">
+              <div class="cannify-products-headline-container container">
+                  <div class="for-doctors-headline-block">
+                      <h1>
+                        <span class="p-0 m-0">
+                            <span class="p-0 m-0">For Healthcare Professionals.</span>
+                        </span>
+                        </h1>
+                        <p>
+                            <span>
+                                <p>Despite all of these scientifically proven positive effects, cannabis does not have a good reputation among doctors and patients. The hemp plant is more associated with drug use and addiction than with its healing properties.</p>
+                            </span>
+                        </p>
+                        <span>
+                            <div class="magnetic"><button type="button" class="btn btn-shop marginless-button">Cannify Shop</button></div>
+                        </span>
+                  </div>
+              </div>
+           <img class="img-responsive w-100" style="object-fit: cover; object-position: center center;" src="./img/cannify-oil.png" alt="About Us">
+          </div>
+    </section>
+    <!-- HEADER CLOSED -->
+    <section class="cannify-shop-for-doctors tb-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 section-selector-column">
+                    <span>Cannify Shop</span>
+                    <p>Company core values.</p>
+                    <div class="section-selector">
+                        <ul class="list-section-selector">  
+                            <li class="selector-link" type="button"><a>Perscribing Medical Cannabis?</a></li>
+                            <li class="selector-link" type="button"><a>Cannabis: drug or medicine?</a> </li>
+                            <li class="selector-link" type="button"><a>Cannabinoid-based Drugs</a></li>
+                            <li class="selector-link" type="button"><a>Current studies on medical cannabis</a></li>
+                            <li class="selector-link" type="button"><a>FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-contact-block">
+                        <div>
+                            <h6>Need Medical Cannbis Information or assistance?</h6>
+                            <span class="contact-tel-email">Telefon: <a href="tel:+49 (0) 241 705 3991">+49 (0) 241 705 3991</a></span>
+                            <br>
+                            <p>(Montag-Freitag,8-18 Uhr)</p>
+                            <span class="contact-tel-email">E-Mail: <a href = "mailto:info@cannify.de">info@cannify.de</a></span>
+                        </div>
+                        <button type="button" class="btn btn-shop">About Cannify</button>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-8 list-info-column">
+                    <span>Cannify Shop</span>
+                    <p>Company core values.</p>
+                    <div class="black-breakline"></div>
+                    <div class="prescribing-medical-cannabis-block">
+                        <h4>Perscribing Medical Cannabis.</h4>
+                        <p>Unfortunately, prescribing medical cannabis requires some administrative work. To make your work easier, we have put together practical templates and work aids for you. 
+                            Prescription forms You can use the official document templates of the Federal Institute for Drugs and Medical Devices (BfArM) for the outpatient and inpatient prescription of medical cannabis. 
+                            Further information on the legal basis can be found here.</p>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Erst-Anforderung von Betäubungsmittelrezepten für ambulante Verschreibungen</span><p>PDF 2MB</p></button>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Erst-Anforderung von Betäubungsmittelrezepten für ambulante Verschreibungen</span><p>PDF 2MB</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+
+
+
+    </body>
+    </html>

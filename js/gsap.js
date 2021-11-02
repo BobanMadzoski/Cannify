@@ -50,78 +50,29 @@ var $hamburger = $('#mob-menu');
 
 
 //Horizontal Section Scroll
-// gsap.registerPlugin(ScrollTrigger);
-
-// const sections = gsap.utils.toArray(".first-year-section");
-// let maxWidth = 0;
-
-// const getMaxWidth = () => {
-//   maxWidth = 0;
-//   sections.forEach((section) => {
-//     maxWidth += section.offsetWidth;
-//   });
-// };
-// getMaxWidth();
-// ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
-
-// gsap.to(sections, {
-//   x: () => `-${maxWidth - window.innerWidth}`,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".horizontal-wrapper",
-//     pin: true,
-//     scrub: 1,
-//     end: () => `+=${maxWidth}`,
-//     invalidateOnRefresh: true
-//   }
-// });
-//Horizontal Section Scroll
-
-
-
-//HORIZONTAL SCROLL
 gsap.registerPlugin(ScrollTrigger);
-const sections = document.querySelectorAll(".block");
-const scrollContainer = document.querySelector(".panel2");
-const snapBy = 1 / (sections.length - 1);
-const snap = gsap.utils.snap(snapBy);
 
-const scrollTween = gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none"
-});
+const sections = gsap.utils.toArray(".first-year-section");
+let maxWidth = 0;
 
-const horizontalScroll = ScrollTrigger.create({
-    animation: scrollTween,
-    trigger: scrollContainer,
+const getMaxWidth = () => {
+  maxWidth = 0;
+  sections.forEach((section) => {
+    maxWidth += section.offsetWidth;
+  });
+};
+getMaxWidth();
+ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+gsap.to(sections, {
+  x: () => `-${maxWidth - window.innerWidth}`,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".horizontal-wrapper",
     pin: true,
     scrub: 1,
-    end: () => "+=" + scrollContainer.offsetWidth,
-    snap: {
-        duration: 0.5,
-        delay: 0.0,
-        ease: "none",
-        inertia: false,
-        snapTo: (value, self) => {
-            let snapped = snap(value);
-            if (snapped > value === self.direction > 0) {
-                return snapped;
-            }
-            return snapped + (self.direction > 0 ? snapBy : -snapBy);
-        }
-    }
+    end: () => `+=${maxWidth}`,
+    invalidateOnRefresh: true
+  }
 });
-
-// total scroll amount divided by the total distance that the sections move gives us the ratio we can apply to the pointer movement so that it fits.
-var dragRatio = scrollContainer.offsetWidth / (window.innerWidth * (sections.length - 1));
-var drag = Draggable.create(".proxy", {
-    trigger: scrollContainer,
-    type: "x",
-    onPress() {
-        this.startScroll = horizontalScroll.scroll();
-    },
-    onDrag() {
-        horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
-    }
-})[0];
-//HORIZONSTAL SCROLL
+//Horizontal Section Scroll

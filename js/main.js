@@ -222,6 +222,14 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 //FAQ CLOSED
 
+//FAQ OPENED ALL TIME
+$('.accordion #accordion-button').on('click', function(e) { 
+  if (!$('#accordion-button').hasAtrribute('aria-expanded','true')) { 
+    e.stopPropagation(); 
+  } 
+});
+//FAQ OPENED ALL TIME CLOSED
+
 //LIST ACTIVE CLASS
 $('.list-section-selector li').click(function(e) {
   e.preventDefault();

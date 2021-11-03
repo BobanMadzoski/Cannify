@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
 body{
     background-color: var(--pampas-white);
     transition: background-color 1s ease;
@@ -986,6 +988,14 @@ p{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    .cannify-shop-head-info-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1%;
+        flex-direction: column;
+    }
     .reveal {
         display: inline-block;
         position: absolute;
@@ -1462,19 +1472,22 @@ p{
 
   /* COMPONENT STYLES*/
   .product-card-header img{
-      object-fit: cover;
-        object-position: center center;
+    object-fit: cover;
+    object-position: center center;
+    padding: 15%;
   }
   .product-card-header{
-      padding: 15%;
+      padding: 5%;
   }
   .product-card{
       background-color:#EFEEE9;
       padding: 25px 25px;
+      margin: 25px 0px;
   }
   .product-title-block{
       display: flex;
-      padding: 13px;
+      flex-direction: row;
+      padding: 8px;
       background-color: var(--silver-sand);
       justify-content: space-between;
       align-items: center;
@@ -1483,12 +1496,17 @@ p{
   .product-title{
       font-size: 20px;
       font-weight: 600;
+      text-align: center;
   }
   .product-specs{
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .specs-breakline{
+      font-weight: 300 !important;
+      margin: 0 4px;
   }
   .number{
       font-weight: bold;
@@ -1511,7 +1529,7 @@ p{
       margin: 0px;
   }
   .price{
-      padding: 10px;
+      padding: 10px 0 !important;
       border-bottom: none !important;
   }
   .price p{
@@ -1528,7 +1546,7 @@ p{
     padding: 20px 40px;
     border-radius: 3px;
     width: 100%;
-    margin: 10px 0px;
+    margin: 0px;
   }
   .product-code{
     border-bottom: none !important;
@@ -1543,7 +1561,7 @@ p{
     color: #A8A8A8 !important;
   }
   .white-button{
-    padding: 13px;
+    padding: 8px 13px;
     background: #EFEEE9;
     border: none;
     border-radius: 3px;
@@ -1749,6 +1767,11 @@ p{
     bottom: 0;
     left: 0;
   }
+  .cannify-shop-bg{
+    display: flex;
+    position: relative;
+    height: 61vh;
+}
 .about-us-bg-video{
     display: flex;
     position: relative;
@@ -1898,12 +1921,26 @@ p{
 .product-information-block a{
     text-decoration: none;
 }
+.faq-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--silver-sand);
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.faq-title h4{
+    margin: 0px;
+}
 .faq-accordion{
     display: flex;
     flex-direction: column;
     background-color: var(--pampas-light);
     border-radius: 3px;
-    padding: 25px;
+    padding: 0px 25px;
+    padding-bottom: 25px;
 }
   .accordion button {
         position: relative;
@@ -1919,10 +1956,12 @@ p{
       border: none;
       margin: 20px 0px;
       border-bottom: 1px solid var(--pampas-dark);
+      background-color: var(--pampas-light);
   }
   .accordion-item h6{
       margin: 0px;
       padding: 10px 0px;
+      text-align: left;
   }
   .accordion button:hover, .accordion button:focus {
     cursor: pointer;
@@ -1941,16 +1980,188 @@ p{
   }
   .accordion button[aria-expanded=true] + .accordion-content {
     opacity: 1;
-    max-height: 9em;
+    max-height: fit-content;
     background-color: var(--pampas-light);
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
   }
   .accordion .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    padding: 0px 6px;
   }
-  .accordion .accordion-content p {
-    font-size: 1rem;
+.accordion-content p{
+    font-size: 14px;
     font-weight: 300;
-    margin: 2em 0;
+    line-height: 1.6;
+
+}
+.accordion-content span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.accordion-list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
   }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.cannify-shop-headline-container{
+    z-index: 8;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cannify-shop-headline-container h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cannify-shop-headline-container p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cannify-shop-headline-block {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .pseudo-search {
+        display: inline-flex;
+        border-radius: 3px;
+        padding: 20px 25px;
+        background: var(--pampas-light);
+        width: 100%;
+    }
+  .pseudo-search input {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+  .pseudo-search input:focus {
+    outline: none;
+  }
+  .pseudo-search button,
+  .pseudo-search i {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .pseudo-search select {
+    border: none;
+  }
+  .fa-search:before{
+      color: #8a898890;
+  }
+.cannify-shop-head-info{
+    font-size: 14px;
+    color: #000;
+    line-height: 1.2;
+    z-index: 1;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.cannify-shop-head-info span{
+    font-weight: 600;
+}
+.cannify-shop-head-info p{
+    margin: 0px;
+}
+.cannify-shop-head-info-content{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1%;
+}
+.cannify-shop-head-buttons button{
+    color: #000;
+    padding: 10px 25px;
+}
+.cannify-shop-head-buttons button:hover{
+    color: #000;
+    background-color: #00000020;
+    padding: 10px 25px;
+}
+.faq-block{
+    margin-bottom: 10%;
+}
+.cannify-shop-download-card button{
+    width: 100%;
+    margin: 5px 0px;
+}
+.cannify-shop-downloads-row h2{
+    margin-bottom: 5%;
+}
+.cannify-shop-faq h2{
+    margin-bottom: 5%;
+}
+.cannify-shop-info-text p{
+    margin-top: 15px;
+}
+.cannify-shop-info-contact{
+    display: flex;
+    flex-direction: column;
+}
+.cannify-shop-info-contact p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+.cannify-shop-info-contact span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.cannify-shop-info-contact a{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+}

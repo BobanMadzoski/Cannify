@@ -32,7 +32,6 @@ gsap.registerPlugin(ScrollTrigger);
 //Page Animations
 } 
 
-
 //Hamburger Menu Animations
 var $hamburger = $('#mob-menu');
 
@@ -47,8 +46,7 @@ var $hamburger = $('#mob-menu');
         hamburgerMotion.restart(!hamburgerMotion.restart());
         });
 //Hamburger Menu Animations
-
-
+  
 //Horizontal Section Scroll
 gsap.registerPlugin(ScrollTrigger);
 

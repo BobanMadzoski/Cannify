@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Distribution of Medical Cannabis">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Boban Madzoski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1b3b36">
+    <title>Cannify - Medical Cannabis Importer</title>
+
+
+    <link rel="icon" href="favicon-2.svg">
+   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="preloader"><div class="loading-symbol-box"></div><div class="intro-content" class="loading-symbol"><img width="80px" height="80px" src="./img/cannify-symbol.svg" alt="Cannify Symbol"></img><p class="loading-paragraph">® Cannify Pharma GbmH</p></div></div>
+    <span id="circle" class="circle"></span>
+    <section class="header-section cannify-products-header-section section-padding">
+      <div class="container-fluid p-0">
+          <div class="header-above">
+              <div class="header-contact">
+                  <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> +49 (0) 241 705 3991</a></span>
+
+                  <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> info@cannify.de</a></span>
+              </div>
+              <div class="header-buttons">
+                  <button class="btn-primary-header">Log Out</button>
+                  <button class="btn-primary-header">Cart(0)</button>
+                  <button class="btn-primary-header" type="button">De</div>
+              </div>
+          </div>
+          <div class="header-breakline"></div>
+          </div>
+          <nav class="navbar navbar-expand-lg" style="z-index: 9;">
+              <div class="container-fluid p-0">
+              <a href="index.html" class="navbar-brand"><img width="190" height="50px" src="./img/cannify-logo-white.png" alt="Cannify Logo"></a>
+        
+              <button id="mob-menu" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <div class="animated-icon1"><span></span><span></span><span></span></div>
+              </button>
+              </button>
+                <div class="collapse navbar-collapse navbar-content" id="navmenu">
+                <ul class="navbar-nav navitem-text" >
+                    <div class="nav-breakline"></div>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                    <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img id="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+
+                          <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="./about-us.html">About Us</a>
+                              <a class="dropdown-item" href="#">GMP Certificate</a>
+                              <a class="dropdown-item" href="#">Downloads</a>
+                              <a class="dropdown-item" href="#">Careers</a>
+                            </div>
+
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                    <a href="#" class="nav-link nav-link-ltr">Products</a>
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img id="dropdown-icon2" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                          
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">General Information</a>
+                              <a class="dropdown-item" href="#">For Patients</a>
+                              <a class="dropdown-item" href="#">For Pharmacist</a>
+                              <a class="dropdown-item" href="#">For Doctors</a>
+                            </div>
+                          </span>
+                      </span>
+                    </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr">Insights</a>
+                          </span>
+                      </span>
+                  </li>
+                  <li class="nav-item">
+                      <span>
+                          <span>
+                      <a href="#" class="nav-link nav-link-ltr">Contact</a>
+                          </span>
+                      </span>
+                  </li>
+                </ul>
+                <!-- Collapsed-Show -->
+                <div class="header-buttons only-collapsed collapsed-buttons">
+                    <div class="menu-button">
+                  <button class="btn-primary-header login-circle">HCP Login</button>
+              </div>
+              <div class="menu-button">
+                  <button class="btn-primary-header">Cannify Shop</button>
+              </div>
+              <div class="menu-button">
+                  <button class="btn-primary-header" type="button" href="index-de.html" >De</div>
+              </div>
+                  <div class="only-collapsed collapsed-contact">
+                      <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg> +49 (0) 241 705 3991</a></span>
+                    <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg> info@cannify.de</a></span>
+                </div>
+              </div>
+              <!-- /Collapsed-Show -->
+              </div>
+          </nav>
+          <div class="cannify-shop-bg">
+              <div class="cannify-shop-headline-container container">
+                  <div class="cannify-shop-headline-block">
+                      <h1>
+                        <span class="p-0 m-0">
+                            <span class="p-0 m-0">Cannify Shop.</span>
+                        </span>
+                        </h1>
+                        <p>
+                            <span>
+                                <p>Willkommen im Fachbereich von Cannify. Alle Detailinformationen zu den Produkten von Cannify, praktische Arbeitsvorlagen und weiterführende Informationen zu medizinischem Cannabis an einem Ort!</p>
+                            </span>
+                        </p>
+                        <form>
+                            <div class="pseudo-search">
+                              <input type="text" placeholder="Search by Product Name, PZN, Genetic" autofocus required>
+                              <button class="fa fa-search" type="submit"></button>
+                            </div>
+                          </form>
+                  </div>
+              </div>
+          </div>
+    </section>
+    <!-- HEADER CLOSED -->
+    <section>
+        <div class="container">
+            <div class="cannify-shop-head-info">
+                    <div class="cannify-shop-head-info-content">
+                        <div>
+                            <span>Cannify Pharma GbmH</span>
+                            <p>Company News & Updates</p>
+                        </div>
+                        <div class="cannify-shop-head-buttons">
+                            <button class="btn-primary-header">Downloads</button>
+                            <button class="btn-primary-header">FAQs</button>
+                            <button class="btn-primary-header">Certificates</button>
+                        </div>
+                    </div>
+                    <div class="black-breakline"></div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        design-not-finished
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-header">
+                                <div class="product-title"><h5>PEDANIOS 8/8 DNK</h5></div> 
+                                <img class="img-responsive w-100" src="./img/product.png" alt="Product">
+                            </div>
+                            <div class="product-title-block"><p class="product-specs"><span>THC: <span class="number">22%</span></span> <span class="specs-breakline">|</span> <span>CBD:<img src="./img/chevron-left.svg" alt="Chevron"><span class="number">1%</span></span></p></div>
+                            <div class="product-info">
+                                <ul class="info-list">
+                                    <li><p>Product Info</p></li>
+                                    <li><span>Genetic</span><span class="number">Sativa</span></li>
+                                    <li><span>Cultivar</span><span class="number">Delahaze</span></li>
+                                    <li><span>Produktklasse</span><span class="number">Blute</span></li>
+                                    <li class="price"><p>Price:</p><span>95,20€ / 10g</span></li>
+                                    <button type="button" class="btn btn-shop">Add To Cart</button>
+                                    <li class="product-code"><p><span class="code-name">PZN:</span>17181230</p><span>Verfügbar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tb-section-padding">
+        <div class="container">
+            <div class="cannify-team-info">
+                <span>Downloads Section</span>
+                <p>Company Core Values</p>
+                <div class="black-breakline"></div>
+            </div>
+            <div class="row cannify-shop-downloads-row">
+                <div class="col-lg-4">
+                    <h2>Praktische Arbeitshilfen zur bürokratischen Entlastung.</h2>
+                    <p>Leider ist die Verschreibung von medizinischem Cannabis mit etwas Verwaltungsaufwand verbunden. Um Ihnen die Arbeit zu erleichtern, haben wir praktische Vorlagen und Arbeitshilfen für Sie zusammengestellt.</p>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-6">
+                    <div class="cannify-shop-download-card download-card">
+                        <div class="download-card-text">
+                            <h5>Abrechnungshilfe</h5>
+                            <div class="download-breakline"></div>
+                            <p>Mithilfe der praktischen Abrechnungshilfe von Cannify können Sie unverarbeitete und verarbeitete Cannabisblüten sowie unveränderte Cannabis-Extrakte mit der gesetzlichen Krankenkasse abrechnen. </p>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Download Abrechnungshilfe</span></button>
+                        </div>
+                    </div>
+                    <div class="cannify-shop-download-card download-card">
+                        <div class="download-card-text">
+                            <h5>Ausfüllhilfe</h5>
+                            <div class="download-breakline"></div>
+                            <p>Bei der Ausstellung des Rezepts für medizinisches Cannabis gilt es einige Vorgaben zu beachten. So muss beispielsweise unbedingt die Blütensorte, die Dosierung und die Verabreichungsart angegeben werden.</p>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Zur Ausfüllhilfe</span></button>
+                        </div>
+                    </div>
+                    <div class="cannify-shop-download-card download-card">
+                        <div class="download-card-text">
+                            <h5>Rezeptformulare</h5>
+                            <div class="download-breakline"></div>
+                            <p>Für die ambulante und stationäre Verschreibung von medizinischem Cannabis können Sie die offiziellen Dokumentvorlagen des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM) nutzen. Weitere Informationen zur Rechtsgrundlage finden Sie hier.</p>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Download BtM-Rezeptformular ambulant</span></button>
+                            <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><span>Download BtM-Anforderungsschein stationär</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tb-section-padding">
+        <div class="container">
+            <div class="cannify-team-info">
+                <span>FAQs</span>
+                <p>Company Core Values</p>
+                <div class="black-breakline"></div>
+            </div>
+            <div class="row cannify-shop-faq">
+                <div class="col-lg-5">
+                    <h2>FAQs Häufig gestellte Fragen zu medizinischem Cannabis.</h2>
+                    <p>Sie haben noch einige Fragen zur Wirkungsweise und Verschreibung von Cannabis? Wir haben die Antworten auf die wichtigsten Fragen für Sie zusammengestellt. </p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6">
+                    <div class="faq-block">
+                    <div class="faq-title"><h4>Wirkungsweise von medizinischem Cannabis</h4></div>
+                    <div class="faq-accordion">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="true"><h6>Welche Wirkung ist bei welchem Cannabinoidmedikament zu erwarten?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Gegen welche Krankheiten kann medizinisches Cannabis eingesetzt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Welche Voraussetzungen müssen für die Verschreibung von Cannabis erfüllt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Wie wird medizinisches Cannabis eingenommen?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="faq-block">
+                    <div class="faq-title"><h4>Wirkungsweise von medizinischem Cannabis</h4></div>
+                    <div class="faq-accordion">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="true"><h6>Welche Wirkung ist bei welchem Cannabinoidmedikament zu erwarten?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Gegen welche Krankheiten kann medizinisches Cannabis eingesetzt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Welche Voraussetzungen müssen für die Verschreibung von Cannabis erfüllt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Wie wird medizinisches Cannabis eingenommen?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="faq-block">
+                    <div class="faq-title"><h4>Wirkungsweise von medizinischem Cannabis</h4></div>
+                    <div class="faq-accordion">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="true"><h6>Welche Wirkung ist bei welchem Cannabinoidmedikament zu erwarten?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Gegen welche Krankheiten kann medizinisches Cannabis eingesetzt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Welche Voraussetzungen müssen für die Verschreibung von Cannabis erfüllt werden?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button" aria-expanded="false"><h6>Wie wird medizinisches Cannabis eingenommen?</h6><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Die Wirkung von medizinischem Cannabis ist maßgeblich von der Zusammensetzung der enthaltenen Cannabinoide abhängig. Es sind insgesamt mehr 
+                                als 85 verschiedene Cannabinoide bekannt, die in ihrer Wirkung teilweise sehr voneinander abweichen.</p>
+                                <span>Die bekanntesten Cannabinoide und ihre Wirkungsweisen:</span>
+                                <ul class="accordion-list">
+                                    <li>Tetrahydro-Cannabinol (THC) hat eine entspannende, sedierende und antiemetische Wirkung.</li>
+                                    <li>Cannabidiol (CBD) hat eine angstlösende, entzündungshemmende anti-psychotische, krampflösende und antiemetischer Wirkung.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="cannify-shop-info-card download-card">
+                        <div class="cannify-shop-info-text download-card-text">
+                            <h5>Cannify Hotline für Mediziner und Apotheker.</h5>
+                            <div class="download-breakline"></div>
+                            <p>Sie haben noch ein paar Detailfragen zu medizinischem Cannabis? Die Experten von Cannify stehen Ihnen gerne zur Verfügung:</p>
+                            <div class="cannify-shop-info-contact">
+                            <span class="contact-tel-email">Telefon: <a href="tel:+49 (0) 241 98092730">+49 (0) 241 98092730</a></span>
+                            <p>(Montag-Freitag,8-18 Uhr)</p>
+                            <span class="contact-tel-email">E-Mail: <a href = "mailto:bestellung@cannify.de">bestellung@cannify.de</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid footer-graphic m-0 p-0"></div>
+    <section class="footer-section section-padding tb-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 contact-col">
+                    <img class="img-responsive mb-5" width="75px" height="90px" src="./img/cannify-symbol.svg" alt="Cannify Symbol">
+                    <br>
+                    <span>® Cannify Pharma GmbH</span>
+                    <p>Theaterplatz 2, D-52062 Aachen</p>
+                    –<br>
+                    <p><span>Telefon:</span> <a href="tel:+49 (0) 241 7053991">+49 (0) 241 7053991</a></p> 
+                    <p><span>Telefax:</span><a href="tel:+49 (0) 241 70539920">+49 (0) 241 70539920</a></p>
+                    <p><span>E-Mail:</span><a href = "mailto:info@cannify.de"> info@cannify.de </a></p>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Company</div>
+                    <a href="#">About Us </a>
+                    <a href="#">GMP Certificate </a>
+                    <a href="#">Downloads</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Cannify Shop</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Knowledge</div>
+                    <a href="#">Medical Cannabis</a>
+                    <a href="#">For Patients</a>
+                    <a href="#">For Pharmacist</a>
+                    <a href="#">For Doctors</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Legal</div>
+                    <a href="#">Imressium</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Membership</div>
+                    <img class="w-50 img-responsive m-2" src="./img/can-med.png" alt="Cannabinoid Medicines">
+                    <img class="w-50 img-responsive m-2" src="./img/bpc.png" alt="BPC">
+                    <br>
+                    <img class="w-50 img-responsive m-2" src="./img/vca.png" alt="VCA">
+                </div>
+            </div>
+            <div class="row last-row footer-last-row">
+                <div class="col-md-12">
+                <hr>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html"><img class="img-responsive footer-logo" width="167" height="48" src="./img/cannify-logo.svg" alt="Cannify Logo"></a>
+                </div>
+                <div class="col-md-4">
+                    <span>© 2021 Cannify Pharma GmbH</span>
+                    <br>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+                         Privacy Policy</a> / <a href="#">Terms & Conditions</a> / <a href="#">Impressum</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-media-footer">
+                        <span>Social Media</span>
+                        <br>
+                        <a href="facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> 
+                            Facebook</a> / <a href="linkedin.com">Linkedin</a> / <a href="twitter.com">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+
+</body>
+</html>

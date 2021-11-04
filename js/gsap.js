@@ -32,8 +32,8 @@ gsap.registerPlugin(ScrollTrigger);
     //Sections Animations
 
     //Work Process Animations
-    ScrollTrigger.batch(".research-horizontal" , {onEnter : batch => gsap.fromTo (batch, {delay:1, opacity:0, y: -100 ,stagger: 1}, {delay:1, y: 0, stagger:1, opacity:1})})
-    ScrollTrigger.batch(".progress-line" , {onEnter : batch => gsap.fromTo (batch, {delay: 1, duration: 0.7 ,scaleY: 0, transformOrigin: "top bottom", stagger: 1}, {delay: 1, duration:0.7, transformOrigin: "top bottom", scaleY: 1, stagger: 1})})
+    ScrollTrigger.batch(".research-horizontal" , {onEnter : batch => gsap.fromTo (batch, {duration: 1,delay:0.5, opacity:0,stagger: 1}, {duration: 1,delay:0.5, stagger:1, opacity:1})})
+    ScrollTrigger.batch(".progress-line" , {onEnter : batch => gsap.fromTo (batch, {delay: 0.2, duration: 0.7 ,scaleY: 0, transformOrigin: "top bottom", stagger: 1}, {delay: 0.2, duration:0.7, transformOrigin: "top bottom", scaleY: 1, stagger: 1})})
     //Work Process Animations
 
 
@@ -79,43 +79,13 @@ ScrollTrigger.matchMedia({
     x: () => `-${maxWidth - window.innerWidth}`,
     ease: "none",
     scrollTrigger: {
-      duration: 0.1,
       trigger: ".horizontal-wrapper",
       pin: true,
       scrub: 1,
-      snap: 1 / (sections.length - 1),
       end: () => `+=${maxWidth}`,
       invalidateOnRefresh: true
     }
   });
 },
 }); 
-
-
-
-
-//Horizontal Snap
-// gsap.registerPlugin(ScrollTrigger);
-
-// let panels = gsap.utils.toArray(".first-year-section"),
-//     scrollTween;
-
-// function goToSection(i) {
-//   scrollTween = gsap.to(window, {
-//     scrollTo: {y: i * innerHeight, autoKill: false},
-//     duration: 1,
-//     onComplete: () => scrollTween = null,
-//     overwrite: true
-//   });
-// }
-
-// panels.forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: "top bottom",
-//     end: "+=200%",
-//     onToggle: self => self.isActive && !scrollTween && goToSection(i)
-//   });
-// });
-//Horizontal snap
 //Horizontal Section Scroll

@@ -2293,6 +2293,7 @@ form {
     justify-content: center;
     align-items: flex-start;
     margin: 15px;
+
 }
 .step-block p{
     font-size: 14px;
@@ -2301,7 +2302,7 @@ form {
 }
 .step-block::before{
     counter-increment: section;
-    content: counter(i) '';
+    content: counter(section);
     position: absolute;
     left: -75px;
     width: 60px;
@@ -2320,4 +2321,8 @@ form {
 }
 .step-block:last-child::after{
     display: none;
+}
+
+body{
+    counter-reset: section;
 }

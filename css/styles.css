@@ -656,12 +656,7 @@ p{
     margin-bottom: 20px;
     min-height: 350px;
 }
-.qualities img{
-    border-radius: 50%;
-    padding: 15px;
-    background: var(--pampas-white);
-    margin-bottom: 25px;
-}
+ 
 .qualities-img {
     display: flex;
     width: 66px;

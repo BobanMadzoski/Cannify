@@ -473,6 +473,20 @@ h2 span{
     border-bottom: none;
 }
   @media (max-width: 992px) {
+.research-horizontal {
+    background-color: #395A52;
+    padding: 40px 20px;
+    display: flex;
+    border-radius: 5px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+.research-horizontal img {
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    }
 .year-numbers::after{
     display: none !important;
 }
@@ -495,6 +509,7 @@ h2 span{
 .navbar{
     padding-top:20px;
     padding-bottom:20px;
+    background-color: var(--green-haze);
 }
 .dropdown-toggle::after {
     display: none;
@@ -595,7 +610,6 @@ h2 span{
     height: 100%;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 40px;
 }
 .cannify-products-headline-container h1{
     color: #fff;
@@ -641,6 +655,12 @@ p{
     padding: 40px 20px; 
     margin-bottom: 20px;
     min-height: 350px;
+}
+.qualities img{
+    border-radius: 50%;
+    padding: 15px;
+    background: var(--pampas-white);
+    margin-bottom: 25px;
 }
 .qualities-img {
     display: flex;
@@ -1051,6 +1071,21 @@ p{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .qualities-horizontal {
+        background-color: var(--silver-sand);
+        padding: 40px 20px;
+        display: flex;
+        align-items: flex-start;
+        border-radius: 5px;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .qualities-text h5, p{
+        padding: 0px !important;
+    }
+    .qualities-horizontal img{
+        margin-bottom: 25px;
+    }
     .history-years{
         font-size: 64px !important;
     }
@@ -1132,8 +1167,14 @@ p{
         margin-top: 3vw;
     }
     .navbar-content {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 40px);
         justify-content: flex-start;
+    }
+    .navbar-container{
+        padding-top: 20px !important;
+    }
+    .navbar{
+        padding-top: 0px !important;
     }
    .only-collapsed {
     display: block;
@@ -1486,7 +1527,7 @@ p{
 }
 .text-column p{
     margin: 0px;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 .horizontal-section-color{
     background-color: var(--pampas-dark);
@@ -1724,6 +1765,7 @@ p{
 .patient-card{
     background-color: #EFEEE9;
     border-radius: 3px;
+    margin-bottom: 25px;
 }
 .patient-card-body a{
     color: var(--green-haze);
@@ -1817,13 +1859,19 @@ p{
   }
 .headline-block{
     max-width: 100%;
+    padding: 20px;
 }
 .for-doctors-headline-block{
     max-width: 60%;
+    padding: 20px;
 }
 .for-doctors-headline-block p{
     font-size: 16px;
     color: #fff;
+}
+.about-us-headline-block{
+    max-width: 60%;
+    padding: 20px;
 }
 .cannify-shop-for-doctors{
     margin-top: 10%;
@@ -1840,16 +1888,29 @@ p{
     border-radius: 3px;
     padding: 25px;
 }
-.list-section-selector a{
+.list-section-selector a {
     color: #000;
     text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 8px 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition:all 0.3s ease-in-out;
 }
-.list-section-selector > li{
+
+.list-section-selector a:hover {
+    background-color: var(--pampas-white);
+    transition:all 0.3s ease-in-out;
+}
+.list-section-selector{
     border-left: 1px solid #00000020;
-    padding: 7px;
 }
-.active{
-    border-left: 2px solid var(--green-haze) !important;
+.list-section-selector li{
+   
+}
+.active-second-nav{
+    border-left: 3px solid var(--green-haze) !important;
 }
 .section-selector-column span{
     font-weight: 600;
@@ -1858,6 +1919,10 @@ p{
 .section-selector-column p{ 
     font-size: 14px;
 }
+.sticky-selector{
+    position: sticky;
+    top: 10px;
+}
 .shop-contact-block{
     display: flex;
     flex-direction: column;
@@ -1865,6 +1930,7 @@ p{
     background-color: var(--silver-sand);
     margin-top: 20px;
     border-radius: 3px;
+    margin-bottom: 25px;
 }
 .shop-contact-block h6{
     color: #000;
@@ -1906,6 +1972,7 @@ p{
     font-weight: 600;
     margin: 0px;
     line-height: 1;
+    text-align: start;
 }
 .list-info-column p{
     font-size: 14px;
@@ -1979,14 +2046,15 @@ p{
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        padding: 20px 0px;
 }
   .accordion-item{
       border: none;
-      margin: 20px 0px;
       border-bottom: 1px solid var(--pampas-dark);
       background-color: var(--pampas-light);
   }
   .accordion-item h6{
+      margin-right: 20px !important;
       margin: 0px;
       padding: 10px 0px;
       text-align: left;
@@ -2035,27 +2103,28 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-  .accordion button .icon {
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
-    border-radius: 22px;
-  }
-  .accordion button .icon::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-  }
-  .accordion button .icon::after {
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  margin-top: 14px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
     display: block;
     position: absolute;
     content: "";
@@ -2065,7 +2134,7 @@ p{
     height: 10px;
     background: currentColor;
   }
-  @keyframes fadein {
+@keyframes fadein {
     from {
         opacity:0;
     }
@@ -2102,12 +2171,12 @@ form {
     width: 50%;
   }
   .pseudo-search {
-        display: inline-flex;
-        border-radius: 3px;
-        padding: 20px 25px;
-        background: var(--pampas-light);
-        width: 100%;
-    }
+    display: inline-flex;
+    border-radius: 3px;
+    padding: 20px 25px;
+    background: var(--pampas-light);
+    width: 100%;
+}
   .pseudo-search input {
     border: 0;
     background-color: transparent;

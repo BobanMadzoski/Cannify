@@ -27,7 +27,7 @@
     <div class="preloader"><div class="loading-symbol-box"></div><div class="intro-content" class="loading-symbol"><img width="80px" height="80px" src="./img/cannify-symbol.svg" alt="Cannify Symbol"></img><p class="loading-paragraph">® Cannify Pharma GbmH</p></div></div>
     <span id="circle" class="circle"></span>
     <section class="header-section cannify-products-header-section section-padding">
-      <div class="container-fluid p-0">
+      <div class="container-fluid p-0 navbar-container">
           <div class="header-above">
               <div class="header-contact">
                   <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -153,19 +153,19 @@
           </div>
     </section>
     <!-- HEADER CLOSED -->
+    <section class="reveal-section">
     <section class="cannify-shop-for-doctors tb-section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 section-selector-column">
-                    <span>Cannify Shop</span>
-                    <p>Company core values.</p>
+                    <div class="sticky-selector">
                     <div class="section-selector">
                         <ul class="list-section-selector">  
-                            <li class="selector-link" type="button"><a>Perscribing Medical Cannabis?</a></li>
-                            <li class="selector-link" type="button"><a>Cannabis: drug or medicine?</a> </li>
-                            <li class="selector-link" type="button"><a>Cannabinoid-based Drugs</a></li>
-                            <li class="selector-link" type="button"><a>Current studies on medical cannabis</a></li>
-                            <li class="selector-link" type="button"><a>FAQs</a></li>
+                            <li type="button"><a class="se-nav-item selector-link " href="#prescribing-medical-cannanbis">Perscribing Medical Cannabis?</a></li>
+                            <li type="button"><a class="se-nav-item selector-link " href="#drug-or-medicine">Cannabis: drug or medicine?</a> </li>
+                            <li type="button"><a class="se-nav-item selector-link " href="#cannabinoid-based-drugs">Cannabinoid-based Drugs</a></li>
+                            <li type="button"><a class="se-nav-item selector-link " href="#studies">Current studies on medical cannabis</a></li>
+                            <li type="button"><a class="se-nav-item selector-link " href="#faqs">FAQs</a></li>
                         </ul>
                     </div>
                     <div class="shop-contact-block">
@@ -177,13 +177,14 @@
                         </div>
                         <button type="button" class="btn btn-shop">About Cannify</button>
                     </div>
+                    </div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8 list-info-column">
                     <span>Cannify Shop</span>
                     <p>Company core values.</p>
-                    <div class="black-breakline"></div>
-                    <div class="product-information-block">
+                    <div class="product-information-block section-page" id="prescribing-medical-cannanbis">
+                        <div class="black-breakline"></div>
                         <h4>Perscribing Medical Cannabis.</h4>
                         <p>Unfortunately, prescribing medical cannabis requires some administrative work. To make your work easier, we have put together practical templates and work aids for you. 
                         Prescription forms You can use the official document templates of the Federal Institute for Drugs and Medical Devices (BfArM) for the outpatient and inpatient prescription of medical cannabis. 
@@ -191,8 +192,8 @@
                         <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><div class="white-button-text"><span>Erst-Anforderung von Betäubungsmittelrezepten für ambulante Verschreibungen</span><p>PDF 2MB</p></div></button>
                         <button class="white-button"><div class="img-circle"><img src="./img/download-icon.svg" alt="Download"></div><div class="white-button-text"><span>Erst-Anforderung von Betäubungsmittelrezepten für ambulante Verschreibungen</span><p>PDF 2MB</p></div></button>
                     </div>
-                    <div class="black-breakline"></div>
-                    <div class="product-information-block">
+                    <div class="product-information-block section-page" id="drug-or-medicine">
+                        <div class="black-breakline"></div>
                         <h4>Cannabis: drug or medicine? </h4>
                         <p>Many people still associate cannabis primarily with recreational use. But the plant has also been used as a remedy for thousands of years. Reason enough to dispel the prejudices and myths surrounding cannabis with facts - 
                         for the benefit of your patients. </p>
@@ -201,8 +202,8 @@
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Stigmatization of patients </span><p>(Leafly knowledge portal)</p></button></a>
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Despite the clear legal situation, cannabis is only partially recognized as a remedy </span><p>(Deutschlandfunk)</p></button></a>
                     </div>
-                    <div class="black-breakline"></div>
-                    <div class="product-information-block">
+                    <div class="product-information-block section-page" id="cannabinoid-based-drugs">
+                        <div class="black-breakline"></div>
                         <h4>Cannabinoid-based drugs.</h4>
                         <p>Are you dealing with medical cannabis for the first time? Here we have put together a useful collection of links for you, in which the most important questions are answered.</p>
                         <span>Further Resources:</span>
@@ -210,8 +211,8 @@
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Stigmatization of patients </span><p>(Leafly knowledge portal)</p></button></a>
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Despite the clear legal situation, cannabis is only partially recognized as a remedy </span><p>(Deutschlandfunk)</p></button></a>
                     </div>
-                    <div class="black-breakline"></div>
-                    <div class="product-information-block">
+                    <div class="product-information-block section-page" id="studies">
+                        <div class="black-breakline"></div>
                         <h4>Current studies on medical cannabis.</h4>
                         <p>Although cannabis has been used for many years as a If a remedy is used, the mode of action has not yet been adequately researched. That is why more and more scientists, doctors and government officials are advocating broad-based studies.</p>
                         <span>Here are the current findings:</span>
@@ -219,7 +220,9 @@
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Stigmatization of patients </span><p>(Leafly knowledge portal)</p></button></a>
                         <a href="#"><button class="white-button-link"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Despite the clear legal situation, cannabis is only partially recognized as a remedy </span><p>(Deutschlandfunk)</p></button></a>
                     </div>
+                    <div class="faq-section-title section-page" id="faqs">
                     <div class="black-breakline"></div>
+                    <h4>FAQs</h4>
                     <div class="faq-title"><h4>Wirkungsweise von medizinischem Cannabis</h4></div>
                     <div class="faq-accordion">
                         <div class="accordion">
@@ -274,18 +277,19 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section-padding products-section tb-section-padding panel" data-color="color-pampas">
+    <section class="section-padding products-section tb-section-padding" data-color="color-pampas">
         <div class="container">
-                    <div class="first-col">
+                    <div>
                         <div><span>Cannify Shop</span></div>
                         <div><p>Medical Cannabis Products</p></div>
                     </div>
                     <div class="black-breakline"></div>
-            <div class="row">
-                <div class="col-md-5 text-column">
+                    <div class="row">
+                <div class="col-md-5">
                     <h2>High-quality medical cannabis products.</h2>
                     <p>Cannify sells medicinal cannabis flowers from Aurora (Pedanios) and Bedrocan. All Cannify products are EU-GMP licensed and subject to the strictest controls - so that Cannify can offer you high quality medical cannabis.</p>
                     <div class="magnetic"><button type="button" class="btn btn-shop marginless-button">Cannify Shop</button></div>
@@ -306,7 +310,7 @@
         </div>
     </section>
     <div class="container-fluid footer-graphic m-0 p-0"></div>
-    <section class="footer-section section-padding tb-section-padding">
+    <section class="footer-section section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-4 contact-col">
@@ -374,6 +378,7 @@
             </div>
         </div>
     </div>
+</section>
 </section>
 
     <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -222,18 +222,51 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 //FAQ CLOSED
 
-//FAQ OPENED ALL TIME
-$('.accordion #accordion-button').on('click', function(e) { 
-  if (!$('#accordion-button').hasAtrribute('aria-expanded','true')) { 
-    e.stopPropagation(); 
-  } 
-});
-//FAQ OPENED ALL TIME CLOSED
+//FAQ OPENED ALL TIME           (NOT WORKING)
+// $('.accordion #accordion-button').on('click', function(e) { 
+//   if (!$('#accordion-button').hasAtrribute('aria-expanded','true')) { 
+//     e.stopPropagation(); 
+//   } 
+// });
+//FAQ OPENED ALL TIME CLOSED    (NOT WORKING)
 
-//LIST ACTIVE CLASS
-$('.list-section-selector li').click(function(e) {
-  e.preventDefault();
-  $('li').removeClass('active');
-  $(this).addClass('active');
-});
-//LIST ACTIVE CLASS CLOSED
+
+//Active Class Toggler Doctor's Page
+// list of elements to be observed
+const navItems = $(".se-nav-item");
+const pageSections = $(".section-page");
+
+const elementIsInView = el => {
+    const scroll = window.scrollY || window.pageYOffset
+    const boundsTop = el.getBoundingClientRect().bottom + scroll
+
+    const viewport = {
+        top: scroll,
+        bottom: scroll + el.clientHeight*0.6,
+    }
+
+    const bounds = {
+        top: boundsTop,
+        bottom: boundsTop - el.clientHeight*0.6,
+    }
+
+
+
+    return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
+        || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+}
+$(function () {
+    $(window).scroll(function () {
+        pageSections.each(function () {
+            if(elementIsInView($(this)[0])){
+                // this = the section that is visible
+                let sectionId = $(this).attr('id');
+                navItems.each(function(){
+                    $(this).removeClass('active-second-nav');
+                });
+                $("a[href='#" + sectionId + "']").addClass('active-second-nav');
+            }
+        })
+    })
+})   
+//Active Class Toggler Doctor's Page CLOSED

@@ -1461,7 +1461,6 @@ p{
     content: '';
     height: 2px;
     display: block;
-    width: 25%;
     margin-left: 400px;
     margin-top: -108px;
     background: var(--green-haze);

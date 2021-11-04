@@ -473,6 +473,9 @@ h2 span{
     border-bottom: none;
 }
   @media (max-width: 992px) {
+.year-numbers::after{
+    display: none !important;
+}
     
 }
 .nav-item:focus{
@@ -1048,6 +1051,23 @@ p{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .history-years{
+        font-size: 64px !important;
+    }
+    .years-column{
+        text-align: center;
+    }
+    .horizontal-wrapper{
+        display: block !important;
+    }
+    .first-year-section{
+        height: auto !important;
+        width: auto !important;
+    }
+    .history-section{
+        padding: 0px;
+        padding-bottom: 5% !important;
+    }
     .warehouse-info{
         font-size: 14px;
         color: #fff;
@@ -1436,6 +1456,15 @@ p{
 }
 .year-info h5{
     margin: 0px;
+}
+.year-numbers::after{
+    content: '';
+    height: 2px;
+    display: block;
+    width: 25%;
+    margin-left: 400px;
+    margin-top: -108px;
+    background: var(--green-haze);
 }
 .year-description{
     font-size: 14px;

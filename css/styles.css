@@ -2330,6 +2330,7 @@ form {
     justify-content: center;
     align-items: flex-start;
     margin: 15px;
+
 }
 .step-block p{
     font-size: 14px;
@@ -2338,7 +2339,11 @@ form {
 }
 .step-block::before{
     counter-increment: section;
+<<<<<<< HEAD
     content: '0' counter(section) '';
+=======
+    content: counter(section);
+>>>>>>> 5e03e9294fda65f32d660ba2509ba57da2e1984e
     position: absolute;
     left: -75px;
     width: 60px;
@@ -2362,6 +2367,7 @@ form {
 .step-block:last-child::after{
     display: none;
 }
+<<<<<<< HEAD
 .partner-review-block{
     display: flex;
     background-color: var(--pampas-light);
@@ -2403,4 +2409,9 @@ form {
     font-size: 14px;
     font-weight: 600;
     margin: 0px;
+=======
+
+body{
+    counter-reset: section;
+>>>>>>> 5e03e9294fda65f32d660ba2509ba57da2e1984e
 }

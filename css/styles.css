@@ -1657,8 +1657,8 @@ p{
     background-color: var(--green-haze);
     padding: 20px 40px;
     border-radius: 3px;
-    width: 100%;
     margin: 0px;
+    width: 100%;
   }
   .product-info span{
       font-weight: 400 !important;
@@ -1708,12 +1708,13 @@ p{
     margin: 0px;
 }
 .white-button-link{
-    padding: 13px;
-    background: #EFEEE9;
     border: none;
     border-radius: 3px;
     display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3px 0px;
   }
   .white-button-link img{
       padding: 5px;
@@ -2022,11 +2023,13 @@ p{
 }
 .list-info-column p{
     font-size: 14px;
-    line-height: 1;
 }
 .product-information-block{
     margin-top: 0px;
     padding-bottom: 10%;
+}
+.drug-or-medicine-img{
+    margin-top: 50px;
 }
 .product-information-block p{
     font-size: 14px;
@@ -2035,7 +2038,6 @@ p{
 }
 .product-information-block button{
     margin: 5px 0px;
-    width: 100%;
 }
 .list-info-column .black-breakline{
     margin-bottom: 2%;
@@ -2676,4 +2678,84 @@ form {
       font-weight: 600;
       color: #D9D9D9;
   }
- 
+  .download-here-button{
+    background: var(--silver-sand);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px !important;
+    width: 100%;
+  }
+ .download-button-block{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background-color: var(--pampas-light);
+     padding: 25px;
+     margin: 20px;
+     margin-left: 0px;
+ }
+ .download-button-block span{
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 1.4;
+ }
+ .download-buttons{
+     display: flex;
+ }
+ .download-here-img{
+     padding: 15px;
+     border-radius: 50%;
+     background-color: var(--pampas-light);
+     display: flex;
+     margin-right: 10px;
+ }
+ .download-button-block a{
+    color: var(--green-haze);
+    text-decoration: underline !important;
+    font-weight: 600;
+}
+.download-button-block a:hover{
+    color: var(--green-haze);
+}
+.download-here-button-text span{
+    font-size: 12px;
+    color: #00000080;
+    text-decoration: none !important;
+}
+.download-here-button-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.white-button-link-first-block{
+    display: flex;
+    align-items: center;
+    background-color: var(--pampas-light);
+    padding: 13px;
+    width: 70%;
+    border-radius: 3px;
+}
+.white-button-link-second-block{
+    display: flex;
+    align-items: center;
+    background-color: var(--silver-sand);
+    justify-content: center;
+    padding: 22px;
+    width: 30%;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.white-button-link-second-block p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+.white-button-link-first-block span{
+    font-size: 16px;
+    text-decoration: none;
+}

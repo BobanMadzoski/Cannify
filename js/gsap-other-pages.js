@@ -4,6 +4,7 @@
     
         //Text Animations
         gsap.from("h1 span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
+        gsap.from(".single-job-opening-headline-block p span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
     
         ScrollTrigger.batch(".reveal-section h2, h3, h4", {onEnter : batch => gsap.from(batch, {duration: 0.6, x: 50})})
         ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.1 , duration: 0.4, opacity:0})})
@@ -28,6 +29,7 @@
         ScrollTrigger.batch(".news>div", {onEnter : batch => gsap.fromTo(batch, { duration: 0.7, opacity: 0, y: 50, stagger: 0.5, ease: "slow (0.3 , 0.4, false)"}, {duration: 0.7, opacity: 1, y: 0, stagger: 0.5, ease: "slow (0.3 , 0.4, false)"})})
         ScrollTrigger.batch(".first-col>div", {onEnter : batch => gsap.fromTo(batch, { duration: 0.7, opacity: 0, y: 50, stagger: 0.1, ease: "slow (0.3 , 0.4, false)"}, {duration: 0.7, opacity: 1, y: 0, stagger: 0.1, ease: "slow (0.3 , 0.4, false)"})})
         ScrollTrigger.batch(".cannify-partners>div", {onEnter : batch => gsap.fromTo(batch, { duration: 0.7, opacity: 0, y: 50, stagger: 0.4, ease: "slow (0.3 , 0.4, false)"}, {duration: 0.7, opacity: 1, y: 0, stagger: 0.4, ease: "slow (0.3 , 0.4, false)"})})
+        ScrollTrigger.batch("li", {onEnter : batch => gsap.from(batch, { duration: 0.5, opacity: 0, x: 10})})
         //Sections Animations
     
         //Work Process Animations

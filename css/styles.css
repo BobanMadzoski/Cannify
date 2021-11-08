@@ -337,6 +337,12 @@ h2 span{
     background-color: var(--green-haze);
     height: 80vh;
 }
+.product-section-more-info span{
+    font-weight: 600;
+}
+.product-section-more-info{
+    font-size: 14px;
+}
 .work-process-section{
     background-color: var(--green-haze);
 }
@@ -2610,3 +2616,64 @@ form {
   .values-column p{
       margin-bottom: 30px;
   }
+  .single-job-opening-headline-block{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-to-apply-block{
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      background-color: var(--silver-sand);
+  }
+  .how-to-apply-block h5{
+      margin-bottom: 20px;
+  }
+  .how-to-apply-block p{
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+  }
+  .how-to-apply-breakline{
+      border-bottom: 1px solid var(--pampas-white);
+      margin-bottom: 20px;
+  }
+  .how-to-apply-text a{
+    color: var(--deep-haze);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .how-to-apply-text span{
+      font-size: 14px;
+      color: var(--deep-haze);
+      font-weight: 600;
+  }
+  .job-desc-column h2{
+    margin-bottom: 50px;
+  }
+  .job-desc-list{
+      margin-top: 50px;
+  }
+  .job-desc-list li{
+      margin: 20px 0px;
+      font-size: 16px;
+      line-height: 1.4;
+  }
+  .job-desc-list li:first-child{
+      margin-top: 20px;
+  }
+  .faded-span{
+      font-weight: 300 !important;
+  }
+  .single-job-opening-headline-block h1>span>span{
+      font-weight: 400 !important;
+      color: #fff;
+  }
+  .single-job-opening-headline-block span{
+      font-weight: 600;
+      color: #D9D9D9;
+  }
+ 

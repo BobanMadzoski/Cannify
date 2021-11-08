@@ -2410,3 +2410,47 @@ form {
 .career-headling-block{
     max-width: 100%;
 }
+.work-positions-section{
+    padding-top: 15vh;
+}
+.job-positions-block{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--silver-sand);
+    border-radius: 3px;
+    width: 100%;
+    padding: 0px 20px;
+}
+.job-position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 30px 0px;
+}
+.job-position-text{
+    display: flex;
+    width: 100%;
+}
+.job-position-text p{
+    margin: 0px;
+}
+.job-position-text span{
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    color: #00000080;
+}
+.job-position a{
+    color: var(--green-haze);
+    font-weight: 600;
+    font-size: 18px ;
+}
+.job-position span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.job-positions-breakline{
+    border-bottom: 1px solid #ffffff80;
+    width: 100%;
+}

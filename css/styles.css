@@ -2411,7 +2411,7 @@ form {
     max-width: 100%;
 }
 .work-positions-section{
-    padding-top: 15vh;
+    padding-top: 10vw;
 }
 .job-positions-block{
     display: flex;
@@ -2453,4 +2453,43 @@ form {
 .job-positions-breakline{
     border-bottom: 1px solid #ffffff80;
     width: 100%;
+}
+.hr-employee{
+    display: flex;
+    margin: 20px 0px;
+}
+.hr-employee-img{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: center;
+}
+.hr-employee-img img{
+    border-radius: 50%;
+    border: 1px solid;
+}
+.hr-employee-text{
+    display: flex;
+    flex-direction: column;
+}
+.hr-employee-text h5{
+    margin: 0px;
+}
+.job-position-contact{
+    display: flex;
+}
+.job-position-contact a{
+    color: #000;
+    text-decoration: none;
+}
+.job-position-contact a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.employee-benefits-row{
+    margin-top: 5%;
+}
+.employee-benefits span{
+    font-size: 14px;
+    font-weight: 600;
 }

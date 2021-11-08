@@ -682,7 +682,7 @@ p{
     display: flex;
     align-items: center;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .qualities-horizontal img{
     border-radius: 50%;
@@ -694,7 +694,7 @@ p{
     margin: 0px;
 }
 .qualities-text h5{
-    margin-bottom: 15px;    
+    margin-bottom: 5px;    
     padding-left: 20px;
 }
 .products-section p{
@@ -2413,6 +2413,9 @@ form {
 .work-positions-section{
     padding-top: 10vw;
 }
+.open-job-positions span{
+    font-weight: 600;
+}
 .job-positions-block{
     display: flex;
     flex-direction: column;
@@ -2481,10 +2484,12 @@ form {
 .job-position-contact a{
     color: #000;
     text-decoration: none;
+    font-weight: 300 !important;
 }
 .job-position-contact a:hover{
     color: #000;
     text-decoration: underline;
+    font-weight: 300 !important;
 }
 .employee-benefits-row{
     margin-top: 5%;
@@ -2493,3 +2498,115 @@ form {
     font-size: 14px;
     font-weight: 600;
 }
+.hr-employee-contact span{
+    font-weight: 600;
+}
+  .employee-accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .employee-accordion-title{
+      font-weight: 600;
+      color: var(--deep-haze);
+  }
+  .employee-accordion-item:first-child{
+      border-top: 1px solid #00000060;
+  }
+  .employee-accordion-item{
+      border-bottom: 1px solid #00000060;
+  }
+  .employee-accordion button:hover, .employee-accordion button:focus {
+    cursor: pointer;
+  }
+  .employee-accordion button:hover::after, .employee-accordion button:focus::after {
+    cursor: pointer;
+  }
+  .employee-accordion button .employee-accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .employee-accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .employee-accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .employee-accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .employee-accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .employee-accordion button[aria-expanded=true] + .employee-accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .employee-accordion .employee-accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .employee-accordion .employee-accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+  .employee-testimonial{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .employee-testimonial-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 50px 25px;
+      background-color: var(--pampas-light);
+  }
+  .employee-testimonial-text h5{
+      margin: 0px;
+      line-height: 1;
+  }
+  .employee-testimonial-text span{
+      color: #717171;
+      margin-bottom: 30px;
+  }
+  .employee-testimonial-text p{
+      font-size: 18px;
+      line-height: 1.4;
+  }
+  .values-column p{
+      margin-bottom: 30px;
+  }

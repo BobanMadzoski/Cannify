@@ -498,10 +498,6 @@ h2 span{
     margin-right: 25px;
     margin-bottom: 25px;
     }
-.year-numbers::after{
-    display: none !important;
-}
-    
 }
 .nav-item:focus{
     text-decoration: none;
@@ -576,8 +572,7 @@ h2 span{
   }
   .info-row p{
       font-weight: 300;
-      font-size: 14px;
-      letter-spacing: -3%;
+      font-size: 16px;
   }
   .info-row span{
       font-weight: bold;
@@ -661,7 +656,7 @@ h2 span{
     font-weight: 400;
 }
 p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
 }
 .qualities{
@@ -703,10 +698,8 @@ p{
     margin-bottom: 5px;    
     padding-left: 20px;
 }
-.products-section p{
-    font-weight: 300;
+.products-section .first-col p{
     font-size: 14px;
-    letter-spacing: -3%;
 }
 .products-section span{
     font-weight: bold;
@@ -773,6 +766,7 @@ p{
     display: flex;
     justify-content: space-between;
     color: #fff;
+    align-items: center;
 }
 .breakline{
     width: 100%;
@@ -796,7 +790,7 @@ p{
 }
 .info-carousel p{
     color: #ffffff70;
-    font-size: 12px;
+    font-size: 14px;
 }
 .flickity-button{
     visibility: hidden;
@@ -839,6 +833,18 @@ p{
     height: 100%;
     background: var(--pampas-white) !important;
 }
+.news-carousel-button{
+        color: #ffffff;
+        margin-bottom: 10px;
+        padding: 15px 30px;
+        border: 0.5px solid rgba(135, 135, 135, 0.537);
+        background-color: transparent;
+        border-radius: 50px;
+        transition: all .3s ease-in-out;
+}
+.news-carousel-button:hover{
+    background-color: rgba(135, 135, 135, 0.449);
+}
 .news-carousel{
     min-height: 100%;
     width: 100%;
@@ -861,10 +867,10 @@ p{
     object-fit: cover;
 }
 .carousel-cell p{
-    font-size: 12px;
+    font-size: 16px;
     color:#ffffff70;
     font-weight: 300;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 .carousel-cell h6{
     color:#ffffff;
@@ -1309,9 +1315,13 @@ p{
   }
   .map-column{
       margin-bottom: 5%;
+      font-size: 14px;
   }
   .map-column span{
       font-weight: 600  ;
+  }
+  .map-column p{
+      font-size: 14px;
   }
 .work-info{
     font-size: 14px;
@@ -1415,6 +1425,10 @@ p{
 }
 .cannify-team-info span{
     font-weight: 600;
+    font-size: 14px;
+}
+.cannify-team-info p{
+    font-size: 14px;
 }
 .cannify-team-text{
     font-size: 14px;
@@ -1423,6 +1437,9 @@ p{
 }
 .cannify-team-text span {
     font-weight: 600;
+}
+.cannify-team-text p{
+    font-size: 14px;
 }
 .personnel-cell{
     display: flex;
@@ -1443,7 +1460,7 @@ p{
 .personnel-cell p{
     margin-bottom: 25px;
 }.personnel-cell a{
-    font-size: 16px;
+    font-size: 18px;
     color: #274840;
     font-weight: 600;
 }
@@ -1493,11 +1510,64 @@ p{
 .history-info span{
     font-weight: 600;
 }
+.history-info p{
+    font-size: 14px;
+}
 .history-row{
     margin-bottom: 10%;
 }
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid #a6a6a6;
+    border-radius: 60px;
+    position: sticky;
+    display: block;
+    top: 90%;
+    left: 50%;
+  }
+  .mouse::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    left: 53%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
 .history-years{
     font-size: 160px;
+    display: flex;
+    align-items: center;
+}
+.year-numbers{
+    display: flex;
+    align-items: center;
+}
+.horizontal-line{
+    display: flex;
+    align-items: center;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--green-haze);
 }
 .second-number{
     color: var(--green-haze);
@@ -1545,14 +1615,6 @@ p{
 .year-info h5{
     margin: 0px;
 }
-.year-numbers::after{
-    content: '';
-    height: 2px;
-    display: block;
-    margin-left: 400px;
-    margin-top: -108px;
-    background: var(--green-haze);
-}
 .year-description{
     font-size: 14px;
     color: #000 !important;
@@ -1566,7 +1628,7 @@ p{
         justify-content: center;
 }
 .company-values-section{
-    margin-top: 9vh;
+    margin-top: 10vw;
 }
 .text-column h2{
     margin: 0px;
@@ -1846,7 +1908,7 @@ p{
 }
 .research-text p{
     color: #ffffff70;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0px;
 }

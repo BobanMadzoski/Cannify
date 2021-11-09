@@ -1327,12 +1327,14 @@ p{
   .map-column{
       margin-bottom: 5%;
       font-size: 14px;
+      line-height: 0.5;
   }
   .map-column span{
       font-weight: 600  ;
   }
   .map-column p{
       font-size: 14px;
+      margin-bottom: 25px;
   }
 .work-info{
     font-size: 14px;
@@ -1907,9 +1909,17 @@ p{
     border-radius: 5px;
     margin: 20px;
 }
-.research-horizontal img{
+.research-img{
+    display: flex;
+    align-items: center;
+    background-color: var(--green-haze);
+    padding: 15px;
     border-radius: 50%;
     margin-right: 25px;
+}
+.research-horizontal img{
+    width: 38px;
+    height: 38px;
 }
 .research-text h5{
     color: #FFF;
@@ -1989,7 +1999,7 @@ p{
     padding: 20px;
 }
 .for-doctors-headline-block{
-    max-width: 60%;
+    max-width: 70%;
     padding: 20px;
 }
 .for-doctors-headline-block p{
@@ -2772,6 +2782,9 @@ form {
     flex-direction: column;
     align-items: center;
   }
+  .single-job-opening-headline-block p span>span{
+      display: flex;
+  }
   .how-to-apply-block{
       display: flex;
       flex-direction: column;
@@ -2948,4 +2961,39 @@ form {
 .product-page-carousel-cell-column span{
     font-weight: 600;
     line-height: 0.5;
+}
+.career-headline-block{
+    margin-left: 25px;
+    max-width: 60%;
+}
+.section-info span{
+    font-weight: 600;
+}
+.section-info p{
+    font-size: 14px;
+}
+.patient-testimonial-video{
+    position: relative;
+    width: 100%;
+}
+.patient-testimonial-video img{
+    width: 100%;
+}
+.patient-testimonial-video::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    content: '\25BA';
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    cursor: pointer;
+}
+#patient-testimonial-section h2{
+    margin-bottom: 50px;
 }

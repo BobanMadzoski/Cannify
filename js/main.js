@@ -223,23 +223,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 //FAQ CLOSED
 
 
-//EMPLOYEE FAQ
-const faq2items = document.querySelectorAll(".employee-accordion button");
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
-  for (i = 0; i < faq2items.length; i++) {
-    faq2items[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
-}
-
-faq2items.forEach(item => item.addEventListener('click', toggleAccordion));
-//EMPLOYEE FAQ
 
 //FAQ OPENED ALL TIME           (NOT WORKING)
 // $('.accordion #accordion-button').on('click', function(e) { 

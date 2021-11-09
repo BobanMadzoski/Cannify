@@ -685,10 +685,17 @@ p{
     border-radius: 5px;
     margin: 10px 0px;
 }
-.qualities-horizontal img{
+.qualities-horizontal-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pampas-white);
     border-radius: 50%;
-    background-color: var(--pampas-white);
     padding: 15px;
+}
+.qualities-horizontal-img img{
+    width: 38px;
+    height: 38px;
 }
 .qualities-text p{
     padding-left: 20px;
@@ -1660,7 +1667,7 @@ p{
   .product-card{
       background-color:#EFEEE9;
       padding: 25px 25px;
-      margin: 25px 0px;
+      margin-bottom: 25px;
   }
   .product-title-block{
       display: flex;
@@ -2323,6 +2330,7 @@ form {
     font-weight: 600;
 }
 .cannify-shop-head-info p{
+    font-size: 14px;
     margin: 0px;
 }
 .cannify-shop-head-info-content{
@@ -2340,6 +2348,62 @@ form {
     color: #000;
     background-color: #00000020;
     padding: 10px 25px;
+}
+.filter-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--silver-sand);
+    padding: 25px;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 15px;
+}
+.filter-product-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.filter-product-categories-title{
+    margin-bottom: 15px;
+}
+.filter-block span{
+    font-size: 14px;
+    color: #717171;
+    font-weight: 400 !important;
+}
+.filter-breakline{
+    border-bottom: 2px solid var(--pampas-white);
+    width: 100%;
+    margin: 15px 0px;
+}
+.form-check {
+    display: flex;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    align-items: center;
+}
+.form-check label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+.form-check-input{
+    margin: 0px;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+.form-check-input:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+}
+.form-check-input:checked {
+    background-color: var(--green-haze);
+    border-color: var(--green-haze);
+    padding: 10px;
 }
 .faq-block{
     margin-bottom: 10%;
@@ -2676,12 +2740,16 @@ form {
   .employee-testimonial-text span{
       color: #717171;
       margin-bottom: 30px;
+      font-size: 14px;
   }
   .employee-testimonial-text p{
       font-size: 18px;
       line-height: 1.4;
   }
   .values-column p{
+      margin-bottom: 30px;
+  }
+  .values-column h2{
       margin-bottom: 30px;
   }
   .single-job-opening-headline-block{

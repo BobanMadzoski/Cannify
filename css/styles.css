@@ -311,12 +311,14 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     overflow: hidden;
 }
-h2 span{
+.cannify-products-headline-container span{
     display: inline-block;
     overflow: hidden;
-    height: 70px;
 }
-
+.cannify-shop-headline-container span{
+    display: inline-block;
+    overflow: hidden;
+}
 .fixed-position {
     position: fixed;
  }
@@ -484,6 +486,9 @@ h2 span{
     border-bottom: none;
 }
   @media (max-width: 992px) {
+    .cannify-shop-headline-block {
+        max-width: 100% !important;
+    }
 .research-horizontal {
     background-color: #395A52;
     padding: 40px 20px;
@@ -619,7 +624,6 @@ h2 span{
 }
 .cannify-products-headline-container h1{
     color: #fff;
-    margin-bottom: 20px;
 }
 .cannify-products-headline-container p{
     font-size: 20px;
@@ -2358,6 +2362,7 @@ form {
     margin-bottom: 25px;
     position: sticky;
     top: 15px;
+    border-radius: 3px;
 }
 .filter-product-categories{
     display: flex;
@@ -2553,6 +2558,15 @@ form {
 }
 .open-job-positions span{
     font-weight: 600;
+}
+.open-job-positions p{
+    font-size: 14px;
+}
+.job-information h2{
+    margin-bottom: 30px;
+}
+.what-we-offer h2{
+    margin-bottom: 30px;
 }
 .job-positions-block{
     display: flex;
@@ -2763,6 +2777,7 @@ form {
       flex-direction: column;
       padding: 30px 20px;
       background-color: var(--silver-sand);
+      border-radius: 3px;
   }
   .how-to-apply-block h5{
       margin-bottom: 20px;
@@ -2831,6 +2846,7 @@ form {
      padding: 25px;
      margin: 20px;
      margin-left: 0px;
+     border-radius: 3px;
  }
  .download-button-block span{
      font-size: 18px;

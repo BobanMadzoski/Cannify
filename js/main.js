@@ -130,26 +130,6 @@ $(window).on("load", function(){
 
 //Page Loader
 
-//Dropdown Menu Icons
-
-$(document).ready(function(){
-
-    $(".dropdown-icon-toggler1").click(function(event){
-        event.preventDefault();
-        $("#dropdown-icon").toggleClass("dropdown-chevron-up");
-    });
-});
-
-$(document).ready(function(){
-
-    $(".dropdown-icon-toggler2").click(function(event){
-        event.preventDefault();
-        $("#dropdown-icon2").toggleClass("dropdown-chevron-up");
-    });
-});
-
-//Dropdown Menu Icons
-
 
 //Hamburger Menu Class Toggle
 
@@ -183,26 +163,6 @@ $(document).ready(function () {
     });
 // Hamburger Menu Icon Animation
 
-
-
-// Favicon Switcher
-$(document).ready(function() {
-    if (!window.matchMedia)
-        return;
-
-    var current = $('head > link[rel="icon"][media]');
-    $.each(current, function(i, icon) {
-        var match = window.matchMedia(icon.media);
-        function swap() {
-            if (match.matches) {
-                current.remove();
-                current = $(icon).appendTo('head');
-            }
-        }
-        match.addListener(swap);
-        swap();
-    });
-});
 
 //FAQ
 const items = document.querySelectorAll(".accordion button");
@@ -272,3 +232,16 @@ $(function () {
     })
 })   
 //Active Class Toggler Doctor's Page CLOSED
+
+
+
+// Circle Animation on Hover
+$(function() {
+    $('a, button').hover(function() {
+      $('#circle').css('transform', 'scale(2)');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#circle').css('transform', 'scale(1)');
+    });
+  });
+// Circle Animation on Hover CLOSED

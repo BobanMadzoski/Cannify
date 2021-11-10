@@ -2225,7 +2225,7 @@ p{
     padding: 0px 6px;
   }
 .accordion-content p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
 
@@ -2729,7 +2729,7 @@ form {
   }
   .employee-accordion button[aria-expanded=true] + .employee-accordion-content {
     opacity: 1;
-    max-height: 9em;
+    max-height: fit-content;
     transition: all 200ms linear;
     will-change: opacity, max-height;
   }
@@ -2741,7 +2741,7 @@ form {
     will-change: opacity, max-height;
   }
   .employee-accordion .employee-accordion-content p {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 300;
     margin: 2em 0;
   }
@@ -2972,12 +2972,16 @@ form {
 .section-info p{
     font-size: 14px;
 }
+.patient-testimonial{
+    padding-top: 10vw;
+}
 .patient-testimonial-video{
     position: relative;
-    width: 100%;
+    width: 70%;
 }
 .patient-testimonial-video img{
     width: 100%;
+    cursor: pointer;
 }
 .patient-testimonial-video::before{
     display: flex;
@@ -2993,7 +2997,108 @@ form {
     height: 75px;
     background-color: #fff;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
-#patient-testimonial-section h2{
+.patient-testimonial-video:hover::before{
+    width: 80px;
+    height: 80px;
+    transition: all .3s ease-in-out;
+}
+#patient-testimonial-section h3{
     margin-bottom: 50px;
+}
+.patient-testimonial-content{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.patient-testimonial-text{
+    display: flex;
+    width: 50%;
+}
+.how-to-access-step-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.how-to-access-step-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--silver-sand);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 5px;
+}
+.how-to-access-step-block:first-child{
+    margin-left: 0px;
+}
+.how-to-access-step-block:last-child{
+    margin-right: 0px;
+}
+.how-to-access-step-block span{
+    font-size: 14px;
+    font-weight: 300 !important;
+    margin: 0px !important;
+}
+.how-to-access-step-block h6{
+    margin-bottom: 30px;
+}   
+#how-to-access-medical-cannabis img{
+    margin-bottom: 30px;
+}
+#how-to-access-medical-cannabis span{
+    font-weight: 600;
+}
+#how-to-access-medical-cannabis ul{
+    margin: 30px 0px;
+}
+.employee-accordion-content .white-button-link-first-block{
+    width: 100%;
+}
+.employee-accordion-content .white-button-link span, a{
+    text-decoration: none !important;
+    font-size: 16px !important;
+}
+.employee-accordion-content .white-button-link:last-child{
+    margin-bottom: 5%;
+}
+#conditions-and-research .employee-accordion-content span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.employee-benefits p{
+    font-size: 14px;
+}
+#cannabis-dosing .qualities-horizontal{
+    padding: 20px !important;
+}
+#risks-and-side-effects span{
+    font-weight: 600;
+    font-size: 16px;
+}
+#risks-and-side-effects ul{
+    margin: 3% 0px;
+}
+#risks-and-side-effects ul{
+    line-height: 1.8;
+}
+.side-effects-section-quality-card{
+    padding: 25px;
+    background-color: var(--silver-sand);
+    border: 1px dashed;
+    border-radius: 3px;
+    margin-bottom: 3%;
+}
+.side-effects-section-quality-card p{
+    margin: 0px;
+}
+.for-patients-products-page-cells{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.for-patients-products-page-cells .products-page-carousel-cell{
+    margin-right: 0px !important;
 }

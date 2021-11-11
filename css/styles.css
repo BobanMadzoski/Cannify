@@ -323,6 +323,9 @@ h1, h2, h3, h4, h5, h6 {
 .fixed-position {
     position: fixed;
  }
+ .reveal-section{
+     padding-top: 18vw;
+ }
 .remove-padding{
     padding: 0 !important;
 }
@@ -484,11 +487,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: flex-start !important;
 }
-.research-horizontal img {
-    border-radius: 50%;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    }
 }
 .nav-item:focus{
     text-decoration: none;
@@ -1726,9 +1724,6 @@ p{
         flex-direction: column;
         justify-content: center;
 }
-.company-values-section{
-    margin-top: 10vw;
-}
 .text-column h2{
     margin: 0px;
     padding-bottom: 20px;
@@ -1889,6 +1884,18 @@ p{
     width: 100%;
     margin: 3px 0px;
   }
+  .white-button-link:hover .white-button-content{
+      background-color: var(--pampas-dark);
+      transition: all .3s ease-in-out;
+    }
+  .white-button-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: var(--pampas-light);
+    padding: 13px;
+    transition: all .3s ease-in-out;
+}
   .white-button-link img{
       padding: 5px;
   }
@@ -2104,9 +2111,6 @@ p{
     max-width: 60%;
     padding: 20px;
 }
-.cannify-shop-for-doctors{
-    margin-top: 10vw;
-}
 .list-section-selector{
     list-style: none;
     font-size: 14px;
@@ -2150,6 +2154,7 @@ p{
 .sticky-selector{
     position: sticky;
     top: 10px;
+    margin-bottom: 10%;
 }
 .shop-contact-block{
     display: flex;
@@ -2234,14 +2239,24 @@ p{
     color: #C4C4C4;
     margin: 0px;
 }
-.white-button-link span{
-    text-decoration: underline;
-    color: var(--green-haze);
+.white-button-link-table {
+    border: none;
+    border-radius: 3px;
+    display: table;
+    margin: 3px 0px;
+    width: 100%;
+    text-decoration: none !important;
 }
-.white-button-link p{
-    text-decoration: none;
-    color: #5F5F5F;
+  .white-button-link-table img{
+      padding: 5px;
+  }
+  .white-button-link-table .img-circle{
+    padding: 8px;
+    background-color: var(--pampas-white);
+    border-radius: 50%;
+    margin-right: 13px;
 }
+
 .product-information-block a{
     text-decoration: none;
 }
@@ -2665,9 +2680,6 @@ form {
 .products-section-text-column{
     margin-bottom: 25px;
 }
-.work-positions-section{
-    padding-top: 13vw;
-}
 .open-job-positions span{
     font-weight: 600;
 }
@@ -2777,6 +2789,9 @@ form {
   .employee-accordion-title{
       font-weight: 600;
       color: var(--deep-haze);
+      margin: 0px !important;
+      padding: 0px !important;
+      width: 95%;
   }
   .employee-accordion-item:first-child{
       border-top: 1px solid #00000060;
@@ -2998,37 +3013,48 @@ form {
     justify-content: space-between;
     width: 100%;
 }
-.white-button-link:hover .white-button-link-first-block{
+.white-button-link-table:hover .white-button-link-first-block{
     background-color: var(--pampas-dark);
     transition: all .3s ease-in-out;
 }
 .white-button-link-first-block{
-    display: flex;
-    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
     background-color: var(--pampas-light);
-    padding: 13px;
-    width: 70%;
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
 .white-button-link-second-block{
-    display: flex;
-    align-items: center;
-    background-color: var(--silver-sand);
-    justify-content: center;
-    padding: 22px;
+    display: table-cell;
+    vertical-align: middle;
     width: 30%;
+    background-color: var(--silver-sand);
     border-radius: 3px;
-    margin-left: 3px;
     transition: all .3s ease-in-out;
 }
+.first-button-link-content{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+}
+.second-button-link-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 13px;
+}
 .white-button-link-second-block p{
+    color: var(--body-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
+    margin: 0px !important;
+    text-decoration: none;
 }
 .white-button-link-first-block span{
+    color: var(--headlines-color);
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
 }
 .products-page-carousel-cell {
@@ -3080,9 +3106,6 @@ form {
 }
 .section-info p{
     font-size: 14px;
-}
-.patient-testimonial{
-    padding-top: 10vw;
 }
 .patient-testimonial-video{
     position: relative;
@@ -3211,9 +3234,6 @@ form {
 }
 .for-patients-products-page-cells .products-page-carousel-cell{
     margin-right: 0px !important;
-}
-.medical-cannabis-general-section{
-    padding-top: 10vw;
 }
 .medical-cannabis-general-section h3{
     margin-bottom: 5%;

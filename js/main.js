@@ -244,3 +244,7 @@ $(function() {
     });
   });
 // Circle Animation on Hover CLOSED
+
+//White Button Height Equal
+// $(".white-button-link-second-block").height($(".white-button-link").height());
+//White Button Height Equal

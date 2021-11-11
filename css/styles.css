@@ -1546,7 +1546,7 @@ p{
     position: absolute;
     width: 50px;
     height: 50px;
-    background: #e4e3dc60;
+    background: #e4e3dc40;
     border-radius: 50%;
     top: 55%;
     left: 46%;
@@ -1562,7 +1562,7 @@ p{
     animation: fade-up .5s ease-in-out;
 }
 .map-location-dot:hover{
-    animation: none;
+    animation-play-state: paused;
 }
 @keyframes fade-up{
     0% {
@@ -1573,14 +1573,23 @@ p{
     }
 }
 @keyframes flash{
-    0%{
+    /* 0%{
         opacity: 0;
         transform: scale(1.1);
     }
     100%{
         opacity: 1;;
         transform: scale(1);
+    } */
+
+        0%{
+        transform: scale(1.4);
     }
+    100%{
+        transform: scale(1);
+    }
+
+    
 }
 .map-location-smaller-dot{
     width: 10px;
@@ -2165,6 +2174,11 @@ p{
     border-radius: 3px;
     margin-bottom: 25px;
 }
+.shop-contact-block-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .shop-contact-block h6{
     color: #000;
     padding-bottom: 20px;
@@ -2570,9 +2584,6 @@ form {
     font-size: 14px;
     font-weight: 300;
     text-decoration: underline;
-}
-.pharmacists-qualities-section{
-    margin-top: 12vh;
 }
 .partners-logo-carousel{
     padding-left: 0px !important;
@@ -3199,6 +3210,9 @@ form {
 #conditions-and-research .employee-accordion-content span{
     font-weight: 600;
     font-size: 14px;
+}
+#treatment-options .employee-accordion-content span{
+    font-weight: 600 !important;
 }
 .employee-benefits p{
     font-size: 14px;

@@ -130,7 +130,6 @@ $(window).on("load", function(){
 
 //Page Loader
 
-
 //Hamburger Menu Class Toggle
 
 $(document).ready(function () {

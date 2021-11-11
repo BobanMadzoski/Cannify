@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     --pure-white: #ffffff;
     --body-text-color: #282A28;
     --headlines-color: #0D2620;
+    --success: #076B4C;
 }
 .animated-icon1, .animated-icon2, .animated-icon3 {
     width: 30px;
@@ -338,6 +339,14 @@ h1, h2, h3, h4, h5, h6 {
 .cannify-products-header-section{
     background-color: var(--green-haze);
     height: 80vh;
+}
+.cannify-blogs-header-section{
+    background-color: var(--green-haze);
+    height: 60vh;
+}
+.cannify-shop-header-section{
+    background-color: var(--green-haze);
+    height: 60vh;
 }
 .product-section-more-info span{
     font-weight: 600;
@@ -645,6 +654,7 @@ p{
     padding: 40px 20px; 
     margin-bottom: 20px;
     min-height: 350px;
+    border-radius: 3px;
 }
  
 .qualities-img {
@@ -680,7 +690,7 @@ p{
 }
 .qualities-text p{
     padding-left: 20px;
-    margin: 0px;
+    margin: 0px !important;
 }
 .qualities-text h5{
     margin-bottom: 5px;    
@@ -830,8 +840,10 @@ p{
         border-radius: 50px;
         transition: all .3s ease-in-out;
 }
-.news-carousel-button:hover{
+.news-carousel-button:hover {
     background-color: rgba(135, 135, 135, 0.449);
+    margin: 10px 5px;
+    margin-top: 0px;
 }
 .news-carousel{
     min-height: 100%;
@@ -1014,6 +1026,18 @@ p{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    .map-location-dot{
+        display: none !important;
+    }
+    .mouse{
+        display: none !important;
+    }
+    .horizontal-line{
+        display: none !important;
+    }
+    .year-numbers {
+        justify-content: center;
+    }
     .blog-info p:first-child::after {
         left: 35% !important;
     }
@@ -1490,6 +1514,82 @@ p{
     width: 62px;
     height: 75px;
 }
+.large-map-column{
+    position: relative;
+}
+.map-tooltip-text {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--pampas-white);
+    width: 250px;
+    padding: 25px;
+    top: -115px;
+    left: -13px;
+    border-radius: 3px;
+}
+.map-tooltip-text:hover{
+    display: flex !important;
+}
+.map-tooltip-text span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.map-tooltip-text p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--body-text-color) !important;
+    margin: 0px;
+}
+.map-location-dot{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #e4e3dc60;
+    border-radius: 50%;
+    top: 55%;
+    left: 46%;
+    justify-content: center;
+    align-items: center;
+    animation-name: flash;
+    animation-duration: 1s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.map-location-dot:hover .map-tooltip-text{
+    display: flex;
+    animation: fade-up .5s ease-in-out;
+}
+.map-location-dot:hover{
+    animation: none;
+}
+@keyframes fade-up{
+    0% {
+        transform:  translate(0px,20px)  ;
+    }
+    100% {
+        transform:  translate(0px,0px)  ;
+    }
+}
+@keyframes flash{
+    0%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;;
+        transform: scale(1);
+    }
+}
+.map-location-smaller-dot{
+    width: 10px;
+    height: 10px;
+    background: var(--pampas-white);
+    border-radius: 50%;
+}
 .pharmacist-section{
     background-color: var(--green-haze);
     height: 50vh;
@@ -1736,8 +1836,11 @@ p{
     font-size: 14px;
   }
   .product-code span{
-    color: #076B4C;
-    font-weight: bold;
+    color: var(--success);
+  }
+  .product-code span:last-child{
+    color: var(--success);
+    font-weight: 600!important;
   }
   .code-name{
     font-weight: bold;
@@ -1750,6 +1853,11 @@ p{
     border-radius: 3px;
     display: inline-flex;
     align-items: center;
+    transition: all .3s ease-in-out;
+  }
+  .white-button:hover{
+      background-color: var(--pampas-dark);
+      transition: all .3s ease-in-out;
   }
   .white-button img{
       padding: 5px;
@@ -1963,7 +2071,7 @@ p{
   .cannify-shop-bg{
     display: flex;
     position: relative;
-    height: 61vh;
+    height: 41vh;
 }
 .about-us-bg-video{
     display: flex;
@@ -2273,7 +2381,7 @@ p{
 }
 .cannify-shop-headline-container h1{
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .cannify-shop-headline-container p{
     font-size: 16px;
@@ -2389,12 +2497,14 @@ form {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.9;
+    cursor: pointer;
 }
 .form-check-input{
     margin: 0px;
     border: none;
     padding: 10px;
     margin-right: 5px;
+    cursor: pointer;
 }
 .form-check-input:focus {
     border-color: transparent;
@@ -2405,6 +2515,11 @@ form {
     background-color: var(--green-haze);
     border-color: var(--green-haze);
     padding: 10px;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: 
+    url("../img/checkbox-icon.svg");
+    background-size: 13px;
 }
 .faq-block{
     margin-bottom: 10%;
@@ -2443,6 +2558,10 @@ form {
 }
 .pharmacists-qualities-section{
     margin-top: 12vh;
+}
+.partners-logo-carousel{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 .cannify-partners span{
     font-size: 14px;
@@ -2546,11 +2665,8 @@ form {
 .products-section-text-column{
     margin-bottom: 25px;
 }
-.career-headling-block{
-    max-width: 100%;
-}
 .work-positions-section{
-    padding-top: 10vw;
+    padding-top: 13vw;
 }
 .open-job-positions span{
     font-weight: 600;
@@ -2561,16 +2677,11 @@ form {
 .job-information h2{
     margin-bottom: 30px;
 }
+.job-information img{
+    margin-bottom: 15%;
+}
 .what-we-offer h2{
     margin-bottom: 30px;
-}
-.job-positions-block{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--silver-sand);
-    border-radius: 3px;
-    width: 100%;
-    padding: 0px 20px;
 }
 .job-position{
     display: flex;
@@ -2578,7 +2689,9 @@ form {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px 20px;
+    margin: 1px 0px;
+    background-color: var(--silver-sand);
 }
 .job-position-text{
     display: flex;
@@ -2729,7 +2842,6 @@ form {
   .employee-accordion .employee-accordion-content p {
     font-size: 16px;
     font-weight: 300;
-    margin: 2em 0;
   }
   .employee-testimonial{
       display: flex;
@@ -2836,6 +2948,11 @@ form {
     align-items: center;
     margin-top: 20px !important;
     width: 100%;
+    transition: all .3s ease-in-out;
+  }
+  .download-here-button:hover{
+      background-color: var(--pampas-dark);
+      transition: all .3s ease-in-out;
   }
  .download-button-block{
      display: flex;
@@ -2881,6 +2998,10 @@ form {
     justify-content: space-between;
     width: 100%;
 }
+.white-button-link:hover .white-button-link-first-block{
+    background-color: var(--pampas-dark);
+    transition: all .3s ease-in-out;
+}
 .white-button-link-first-block{
     display: flex;
     align-items: center;
@@ -2888,6 +3009,7 @@ form {
     padding: 13px;
     width: 70%;
     border-radius: 3px;
+    transition: all .3s ease-in-out;
 }
 .white-button-link-second-block{
     display: flex;
@@ -2898,6 +3020,7 @@ form {
     width: 30%;
     border-radius: 3px;
     margin-left: 3px;
+    transition: all .3s ease-in-out;
 }
 .white-button-link-second-block p{
     font-size: 14px;
@@ -2950,7 +3073,7 @@ form {
 }
 .career-headline-block{
     margin-left: 25px;
-    max-width: 60%;
+    max-width: 100%;
 }
 .section-info span{
     font-weight: 600;
@@ -3253,6 +3376,11 @@ form {
     background-color: var(--pampas-light);
     border-radius: 3px;
     margin-bottom: 5%;
+    transition: all .3s ease-in-out;
+}
+.blog-block:hover{
+    background-color: var(--pampas-dark);
+    transition: all .3s ease-in-out;
 }
 .blog-breakline{
     border-bottom: 1px solid #C8C8C8;

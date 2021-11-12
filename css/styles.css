@@ -3072,9 +3072,11 @@ form {
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin-right: 20px;
     padding-left: 10px;
     border-left: 1px solid #00000020;
+}
+.products-page-carousel-cell:first-child{
+    margin-right: 20px;
 }
 .products-page-carousel-cell img{
     display: block;
@@ -3103,6 +3105,7 @@ form {
 .products-page-cells{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .product-page-carousel-cell-column span{
     font-weight: 600;

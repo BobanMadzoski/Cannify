@@ -996,7 +996,7 @@ p{
     .circle {
         position: absolute;
       background-color:#215145;
-      opacity:0.4;
+      opacity:0.25;
         width: 24px; 
         height: 24px; 
       border-radius: 50%;  
@@ -1024,6 +1024,10 @@ p{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    .for-patients-headline-block{
+        margin-left: 25px;
+        max-width: 100%;
+    }
     .map-location-dot{
         display: none !important;
     }
@@ -3071,9 +3075,10 @@ form {
 .products-page-carousel-cell {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     padding-left: 10px;
     border-left: 1px solid #00000020;
+    margin-bottom: 30px;
 }
 .products-page-carousel-cell:first-child{
     margin-right: 20px;
@@ -3102,6 +3107,9 @@ form {
     font-size: 18px;
     font-weight: 600;
 }
+.remove-underline-title{
+    text-decoration: none;
+}
 .products-page-cells{
     display: flex;
     flex-direction: row;
@@ -3115,11 +3123,17 @@ form {
     margin-left: 25px;
     max-width: 100%;
 }
+.for-patients-headline-block{
+    margin-left: 25px;
+    max-width: 60%;
+}
 .section-info span{
     font-weight: 600;
+    font-size: 14px;
 }
 .section-info p{
     font-size: 14px;
+    line-height: 1;
 }
 .patient-testimonial-video{
     position: relative;

@@ -42,24 +42,6 @@
         //Work Process Animations
     
     
-        //Year Animations
-        gsap.set(".horizontal-line", {scaleX: 0})
-
-        gsap.to(".horizontal-line", {
-          delay:1,
-          duration: 1,
-          scaleX: 1,
-          ease: none,
-          transformOrigin: "right left",
-          ScrollTrigger:{
-            trigger: ".history-years",
-            containerAnimation: scrollTween,
-          },
-      })
-        //Year Animations
-    
-    //Page Animations
-    
     //Hamburger Menu Animations
     var $hamburger = $('#mob-menu');
     

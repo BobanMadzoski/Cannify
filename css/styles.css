@@ -922,6 +922,18 @@ p{
     font-weight: 600;
     margin-bottom: 1.5rem!important;
 }
+.box {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: white;
+    border-radius: 8px;
+    color: #222;
+    font-weight: 700;
+    margin-left: 20px;
+    will-change: transform;
+  }
 .contact-col-1 a {
     font-size: 14px;
     color: #000;

@@ -29,26 +29,3 @@ ScrollTrigger.matchMedia({
 }); 
 
 
-
-// 
-function GSAPHorizontalScroll() {
-    let Sections = gsap.utils.toArray(".first-year-section");
-    gsap.set(".horizontal-line", {width: "0"})
-    let GSAPHorizontalScrollTL = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".history-years",
-            pin: true,
-            scrub: 0,
-            // snap: 1 / (Sections.length - 1),
-            end: () => "+=" + pageWrap.offsetWidth,
-            // markers: "true",
-        }
-    })
-    GSAPHorizontalScrollTL
-        .to(".horizontal-line", {
-            width: "100%",
-            ease: "none",
-        })
-}
-//GSAPHorizontalScroll
-// 

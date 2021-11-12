@@ -43,7 +43,19 @@
     
     
         //Year Animations
-        
+        gsap.set(".horizontal-line", {scaleX: 0})
+
+        gsap.to(".horizontal-line", {
+          delay:1,
+          duration: 1,
+          scaleX: 1,
+          ease: none,
+          transformOrigin: "right left",
+          ScrollTrigger:{
+            trigger: ".history-years",
+            containerAnimation: scrollTween,
+          },
+      })
         //Year Animations
     
     //Page Animations
@@ -64,35 +76,7 @@
     //Hamburger Menu Animations
       
     //Horizontal Section Scroll
-    gsap.registerPlugin(ScrollTrigger);
-    
-    ScrollTrigger.matchMedia({
-    "(min-width: 960px)": function() {
-      const sections = gsap.utils.toArray(".first-year-section");
-      let maxWidth = 0;
-      
-      const getMaxWidth = () => {
-        maxWidth = 0;
-        sections.forEach((section) => {
-          maxWidth += section.offsetWidth;
-        });
-      };
-      getMaxWidth();
-      ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
-      
-      gsap.to(sections, {
-        x: () => `-${maxWidth - window.innerWidth}`,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".horizontal-wrapper",
-          pin: true,
-          scrub: 1,
-          end: () => `+=${maxWidth}`,
-          invalidateOnRefresh: true
-        }
-      });}
-    }); 
-    
+
     
     
     

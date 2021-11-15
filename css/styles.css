@@ -678,7 +678,7 @@ p{
     display: flex;
     align-items: center;
     border-radius: 5px;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 .qualities-horizontal-img{
     display: flex;
@@ -1157,7 +1157,7 @@ p{
         display: flex;
         align-items: flex-start;
         border-radius: 5px;
-        margin: 10px;
+        margin: 20px 0px;
         flex-direction: column;
     }
     .qualities-text h5, p{
@@ -2627,7 +2627,8 @@ form {
     margin-bottom: 20px;
 }
 .step-by-step-block{
-    margin-left: 60px;
+    margin-left: 60px !important;
+    margin: 10% 0px
 }
 .step-block{
     display: flex;
@@ -3662,4 +3663,83 @@ form {
   .contact-content{
       position: sticky;
       top: 15px;
+  }
+  .contact-content h6{
+      margin-top: 20px;
+  }
+  .contact-content .faded{
+      color: #717171;
+      font-size: 14px;
+  }
+  .contact-us-form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  }
+  .contact-us-form input{
+      width: 100%;
+      padding: 20px;
+      border: 1px solid var(--pampas-dark);
+      border-radius: 3px;
+      margin-bottom: 20px;
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus-visible{
+      border: 2px solid var(--green-haze);
+      outline: transparent;
+      outline-offset: none;
+  }
+  .form-group label{
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+  }
+  input[type="submit" i] {
+      color: #fff;
+      background-color: var(--green-haze);
+      width: fit-content;
+      padding: 20px 30px;
+      border-radius: 3px;
+  }
+  .form-group textarea{
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: transparent;
+  }
+  textarea:focus-visible{
+    border: 2px solid var(--green-haze);
+    outline: transparent;
+    outline-offset: none;
+}
+textarea:focus::placeholder {
+    color: transparent;
+  }
+  .download-buttons{
+      margin-bottom: 10%;
+  }
+  .shop-login-headline-block{
+    height: 100%;
+    align-items: center;
+  }
+  .shop-login-container{
+      height: 75%;
+  }
+  .shop-login-headline-block h1{
+      margin: 0px;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+  .shop-login-headline-block p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0px;
+  }
+  .cannify-shop-login-header-section{
+      background-color: var(--green-haze);
+      height: 75vh;
   }

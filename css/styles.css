@@ -3338,6 +3338,7 @@ form {
     background: var(--pampas-light);
     height: 500px;
     margin-bottom: 20px;
+    border-radius: 3px;
 }
 .cb-receptors{
     display: flex;
@@ -3347,6 +3348,7 @@ form {
     background: var(--silver-sand);
     min-height: 500px;
     margin-bottom: 20px;
+    border-radius: 3px;
 }
 .cb-receptors ul{
     font-weight: 400;
@@ -3379,7 +3381,8 @@ form {
     padding: 30px 20px;
     background-color: var(--silver-sand);
     margin: 20px 0px;
-    min-height: 515px
+    min-height: 515px;
+    border-radius: 3px;
 }
 .cannabidiol-img{
     margin: 15px 0px;

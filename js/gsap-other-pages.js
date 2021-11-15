@@ -57,34 +57,3 @@
             });
     //Hamburger Menu Animations
       
-    //Horizontal Section Scroll
-
-    
-    
-    
-    //Horizontal Snap
-    // gsap.registerPlugin(ScrollTrigger);
-    
-    // let panels = gsap.utils.toArray(".first-year-section"),
-    //     scrollTween;
-    
-    // function goToSection(i) {
-    //   scrollTween = gsap.to(window, {
-    //     scrollTo: {y: i * innerHeight, autoKill: false},
-    //     duration: 1,
-    //     onComplete: () => scrollTween = null,
-    //     overwrite: true
-    //   });
-    // }
-    
-    // panels.forEach((panel, i) => {
-    //   ScrollTrigger.create({
-    //     trigger: panel,
-    //     start: "top bottom",
-    //     end: "+=200%",
-    //     onToggle: self => self.isActive && !scrollTween && goToSection(i)
-    //   });
-    // });
-    //Horizontal snap
-    //Horizontal Section Scroll
-    

@@ -397,13 +397,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 25px;
     transition: all .3s ease-in-out;
 }
-.btn-primary-header:hover{
-    color: #ffffff;
+.btn-primary-header:hover {
     margin: 0px 10px;
     padding: 5px 20px;
-    border: 0.5px solid rgba(135, 135, 135, 0.66);
-    background-color: rgba(135, 135, 135, 0.449);
+    background-color: #396a5f;
     border-radius: 25px;
+    border: transparent;
     transition: all .3s ease-in-out;
 }
 .dropdown-item:hover {
@@ -640,11 +639,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--green-haze);
     padding: 20px 40px;
     border-radius: 3px;
+    transition: background-color .3s ease-in-out;
 }
 .btn-shop:hover{
     color: #fff;
-    background-color: var(--green-haze);
-    padding: 20px 40px;
+    background-color: #396A5F;
+    transition: background-color .3s ease-in-out;
 }
 .btn{
     font-weight: 400;
@@ -816,11 +816,11 @@ p{
     transition: all .3s ease-in-out;
 }
 .button--next:hover{
-    background-color: rgba(135, 135, 135, 0.449);
+    background-color: #396a5f;
     transition: all .3s ease-in-out;
 }
 .button--previous:hover{
-    background-color: rgba(135, 135, 135, 0.449);
+    background-color: #396a5f;
     transition: all .3s ease-in-out;
 }
 .reveal {
@@ -845,9 +845,12 @@ p{
         transition: all .3s ease-in-out;
 }
 .news-carousel-button:hover {
-    background-color: rgba(135, 135, 135, 0.449);
     margin: 10px 5px;
     margin-top: 0px;
+    background-color: #396a5f;
+    border-radius: 25px;
+    border: transparent;
+    transition: all .3s ease-in-out;
 }
 .news-carousel{
     min-height: 100%;
@@ -1463,7 +1466,7 @@ p{
     line-height: 1.2;
     z-index: 1;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .cannify-team-info span{
     font-weight: 600;
@@ -1765,11 +1768,8 @@ p{
 .horizontal-section-color{
     background-color: var(--pampas-dark);
 }
-.cannify-product-qualities-section{
-    margin-top: 20vh;
-}
 .cannify-product-qualities-section h2{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
   /* COMPONENT STYLES*/
@@ -2469,6 +2469,7 @@ form {
   }
   .pseudo-search input:focus {
     outline: none;
+    border: none;
   }
   .pseudo-search button,
   .pseudo-search i {
@@ -2507,11 +2508,14 @@ form {
 .cannify-shop-head-buttons button{
     color: #000;
     padding: 10px 25px;
+    transition: all .3s ease-in-out;
 }
 .cannify-shop-head-buttons button:hover{
-    color: #000;
-    background-color: #00000020;
+    color: #fff;
+    background-color: #396a5f;
     padding: 10px 25px;
+    border: transparent;
+    transition: all .3s ease-in-out;
 }
 .filter-block{
     display: flex;
@@ -2922,6 +2926,9 @@ form {
       font-size: 18px;
       line-height: 1.4;
   }
+  .values-column{
+      margin-bottom: 10%;
+  }
   .values-column p{
       margin-bottom: 30px;
   }
@@ -3059,15 +3066,17 @@ form {
     display: table-cell;
     vertical-align: middle;
     background-color: var(--pampas-light);
-    border-radius: 3px;
     transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 .white-button-link-second-block{
     display: table-cell;
     vertical-align: middle;
     width: 30%;
     background-color: var(--silver-sand);
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     transition: all .3s ease-in-out;
 }
 .first-button-link-content{
@@ -3706,7 +3715,12 @@ form {
       width: fit-content;
       padding: 20px 30px;
       border-radius: 3px;
+      transition: all .3s ease-in-out;
   }
+  input[type="submit" i]:hover {
+    background-color: #396A5F;
+    transition: all .3s ease-in-out;
+}
   .form-group textarea{
       width: 100%;
       margin-bottom: 20px;

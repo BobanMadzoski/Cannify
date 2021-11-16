@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+
+
 
 body{
     background-color: var(--pampas-white);
@@ -15,48 +17,48 @@ body{
 h1, h2, h3, h4, h5, h6 {
     color: var(--headlines-color);
 }
-    h1{
-        font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (1600 - 300))) !important;
-        line-height: 1;
-        letter-spacing: -2px;
-        font-weight: 400;
-    }
-    h2{
-        font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (1600 - 300))) !important;
-        line-height: 1;
-        letter-spacing: -1.5px;
-        font-weight: 400;
-    }
-    h3{
-        font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))) !important;
-        line-height: 1;
-        letter-spacing: -1px;
-        font-weight: 400;
-    }
-    h4{
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: -0.5px;
-    }
-    h5{
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: -0.5px;
-        font-weight: 500;
-    }
-    h6{
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 0px;
-        font-weight: 500;
-    }
-    .h2{
-        font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (1600 - 300))) !important;
-        line-height: 1;
-        letter-spacing: -1.5px;
-        font-weight: 400;
-    }
+h1{
+    font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (2000 - 300))) !important;
+    line-height: 1;
+    letter-spacing: -2px;
+    font-weight: 400;
+}
+h2{
+    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2400 - 300))) !important;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+}
+h3{
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (2400 - 300))) !important;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+h4{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+h5{
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+h6{
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+.h2{
+    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2400 - 300))) !important;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+}
 .dropdown-item{
     line-height: 40px !important;
 }
@@ -330,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
  }
  .reveal-section{
-     padding-top: 18vw;
+     padding-top: 12vh;
  }
 .remove-padding{
     padding: 0 !important;
@@ -555,23 +557,81 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     height: 70vh;
   }
-  .info-row div{
-      display: flex;
-      color: #fff;
-      background-color:var(--green-haze);
-      align-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 20px;
+  .under-headline-blocks{
+      z-index: 1;
   }
-  .info-row p{
-      font-weight: 300;
-      font-size: 16px;
+  .under-headline-blocks::before{
+    content: '';
+    position: absolute;
+    background-color: var(--green-haze);
+    opacity: 0.85;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
   }
-  .info-row span{
-      font-weight: bold;
-      font-size: 24px;
-  }
+  .for-patients-block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    background-color: var(--green-haze);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    transition: .3s all;
+
+}
+.for-doctors-block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    background-color: var(--green-haze);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-left: 1px solid var(--silver-sand);
+    border-right: 1px solid var(--silver-sand);
+    transition: background-image .3s ease-in-out;
+}
+.for-pharmacist-block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    background-color: var(--green-haze);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    transition: background-image .3s ease-in-out;
+}
+.for-patients-block:hover{
+    background-image: url(../img/patient.png);
+    transition: all .3s ease-in-out;
+
+}
+.for-doctors-block:hover{
+    background-image: url(../img/doctor.png);
+    transition: all .3s ease-in-out;
+}
+.for-pharmacist-block:hover{
+    background-image: url(../img/pharmacist.png);
+    transition: all .3s ease-in-out;
+}
+.info-row h5{
+    color: #fff;
+}
+.info-row .col-md-4{
+    padding: 0px !important;
+}
   .info-row a{
     color: #fff;
     font-weight: bold;
@@ -596,12 +656,22 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     position: absolute;
     height: 100%;
+    padding: 0px 40px;
     justify-content: flex-start;
     align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .headline-container h1{
     color: #fff;
-    padding-left: 40px;
+    margin: 0px;
+    margin-bottom: -10px;
+}
+.headline-container p{
+    font-size: 18px;
+    color: #fff;
 }
 .cannify-products-headline-container{
     z-index: 8;
@@ -613,9 +683,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cannify-products-headline-container h1{
     color: #fff;
+    margin-bottom:-10px;
 }
 .cannify-products-headline-container p{
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -818,10 +889,12 @@ p{
 .button--next:hover{
     background-color: #396a5f;
     transition: all .3s ease-in-out;
+    border: transparent;
 }
 .button--previous:hover{
     background-color: #396a5f;
     transition: all .3s ease-in-out;
+    border: transparent;
 }
 .reveal {
     display: inline-block;
@@ -1045,6 +1118,15 @@ p{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    .headline-container{
+        padding: 0px 3%;
+    }
+    .for-doctors-block{
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid var(--silver-sand);
+        border-bottom: 1px solid var(--silver-sand);
+    }
     .for-patients-headline-block{
         margin-left: 25px;
         max-width: 100%;
@@ -1131,6 +1213,14 @@ p{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .about-us-headline-block{
+        max-width: 100% !important;
+    }
+    .career-headline-block{
+        margin-left: 15px !important;
+        margin-right:15px !important;
+        max-width: 100% !important;
+    }
     .sticky-blog-block{
         position: relative !important;
     }
@@ -1308,8 +1398,8 @@ p{
         border-left: 1px solid #ffffff40;
     }
     .tb-section-padding{
-        padding-top:15%;
-        padding-bottom:15%;
+        padding-top:10%;
+        padding-bottom:10%;
     }
     .social-media-footer{
         float: left !important;
@@ -2138,8 +2228,7 @@ p{
     color: #fff;
 }
 .about-us-headline-block{
-    max-width: 60%;
-    padding: 20px;
+    max-width: 50%;
 }
 .list-section-selector{
     list-style: none;
@@ -2437,7 +2526,7 @@ p{
 }
 .cannify-shop-headline-container h1{
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 .cannify-shop-headline-container p{
     font-size: 16px;
@@ -3153,7 +3242,8 @@ form {
 }
 .career-headline-block{
     margin-left: 25px;
-    max-width: 100%;
+    margin-right:25px;
+    max-width: 60%;
 }
 .for-patients-headline-block{
     margin-left: 25px;
@@ -3428,7 +3518,7 @@ form {
     align-items: center;
   }
 .cannify-blogs-headline-block span{
-    height: 130px;
+
 }
 .cannify-single-blog-headline-block{
     max-width: 100%;

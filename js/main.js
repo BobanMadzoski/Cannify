@@ -139,6 +139,7 @@ $(document).ready(function () {
         $('body').toggleClass('fixed-position');
         $('.section-padding').toggleClass('remove-padding')
         $('.navbar').toggleClass('navbar-padding')
+        document.getElementsByClassName('.navbar').style.backgroundColor = "white";
     });
     });
 

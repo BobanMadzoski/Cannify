@@ -3,11 +3,13 @@
     gsap.registerPlugin(ScrollTrigger);
     
         //Text Animations
-        gsap.from("h1 span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
+        gsap.from("h1 span>span", {duration: 1.5,delay: 0.3,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
         gsap.from("p span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
         gsap.from(".headline-container p", {duration: 1.5, delay: 2, opacity:0})
         gsap.from(".headline-container button", {duration: 1.5, delay: 2.5, opacity:0})
         gsap.from(".headline-container form", {duration: 1.5, delay: 2.5, opacity:0})
+        gsap.from(".cannify-shop-headline-container p", {duration: 1.5, delay: 1.2, opacity:0})
+        gsap.from(".cannify-shop-headline-container form", {duration: 1, delay: 1.5, opacity:0})
 
         ScrollTrigger.batch(".reveal-section h2, h3, h4", {onEnter : batch => gsap.from(batch, {duration: 0.6, x: 50}), once: true})
         ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.1 , duration: 0.4, opacity:0}), once: true})

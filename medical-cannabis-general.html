@@ -1,591 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Distribution of Medical Cannabis">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Boban Madzoski">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1b3b36">
-    <title>Cannify - Medical Cannabis Importer</title>
+<meta charset="UTF-8">
+<meta name="description" content="Distribution of Medical Cannabis">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Boban Madzoski">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1b3b36">
+<title>Cannify - Medical Cannabis Importer</title>
 
 
-    <link rel="icon" href="favicon.svg">
-   
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./css/flickity.css" media="screen">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+<link rel="icon" href="favicon.svg">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/flickity.css" media="screen">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/styles.css" type="text/css">
 
 </head>
 <body>
- <!-- HEADER -->
- <span id="circle" class="circle"></span>
- <section class="header-section about-us-header-section section-padding">
-     <div class="container-fluid p-0 navbar-container">
-         <div class="header-above">
-             <div class="header-contact">
-                 <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                 </svg> +49 (0) 241 705 3991</a></span>
+<!-- HEADER -->
+<span id="circle" class="circle"></span>
+<section class="header-section about-us-header-section section-padding">
+    <div class="container-fluid p-0 navbar-container">
+        <div class="header-above">
+            <div class="header-contact">
+                <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg> +49 (0) 241 705 3991</a></span>
 
-                 <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                 </svg> info@cannify.de</a></span>
-             </div>
-             <div class="header-buttons">
-                 <button OnClick=" location.href='login.html'" class="btn-primary-header login-circle">HCP Login</button>
-             <button OnClick=" location.href='cannify-shop.html'" class="btn-primary-header">Cannify Shop</button>
-                 <button class="btn-primary-header" type="button">De</div>
-             </div>
-         </div>
-         <div class="header-breakline"></div>
-         </div>
-         <nav class="navbar navbar-expand-lg" style="z-index: 9;">
-             <div class="container-fluid p-0">
-             <a href="index.html" class="navbar-brand"><img width="190" height="50px" src="./img/cannify-logo-white.png" alt="Cannify Logo"></a>
-       
-             <button id="mob-menu" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                 <div class="animated-icon1"><span></span><span></span><span></span></div>
-             </button>
-             </button>
-               <div class="collapse navbar-collapse navbar-content" id="navmenu">
-               <ul class="navbar-nav navitem-text" >
-                   <div class="nav-breakline"></div>
-                 <li class="nav-item">
-                     <span>
-                         <span>
-                   <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img class="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
-
-                         <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="./about-us.html">About Us</a>
-                             <a class="dropdown-item" href="#">GMP Certificate</a>
-                             <a class="dropdown-item" href="downloads.html">Downloads</a>
-                             <a class="dropdown-item" href="careers.html">Careers</a>
-                           </div>
-
-                         </span>
-                     </span>
-                 </li>
-                 <li class="nav-item">
-                     <span>
-                         <span>
-                   <a href="cannify-products.html" class="nav-link nav-link-ltr">Products</a>
-                         </span>
-                     </span>
-                 </li>
-                 <li class="nav-item">
-                     <span>
-                         <span>
-                     <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img class="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
-                         
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="medical-cannabis-general.html">General Information</a>
-                             <a class="dropdown-item" href="for-patients.html">For Patients</a>
-                             <a class="dropdown-item" href="for-pharmacists.html">For Pharmacist</a>
-                             <a class="dropdown-item" href="for-doctors.html">For Doctors</a>
-                           </div>
-                         </span>
-                     </span>
-                   </li>
-                 <li class="nav-item">
-                     <span>
-                         <span>
-                     <a href="cannify-blogs.html" class="nav-link nav-link-ltr">Insights</a>
-                         </span>
-                     </span>
-                 </li>
-                 <li class="nav-item">
-                     <span>
-                         <span>
-                     <a href="contact-us.html" class="nav-link nav-link-ltr">Contact</a>
-                         </span>
-                     </span>
-                 </li>
-               </ul>
-               <!-- Collapsed-Show -->
-               <div class="header-buttons only-collapsed collapsed-buttons">
-                   <div class="menu-button">
-                 <button OnClick=" location.href='login.html'" class="btn-primary-header login-circle">HCP Login</button>
-             </div>
-             <div class="menu-button">
-             <button OnClick=" location.href='cannify-shop.html'" class="btn-primary-header">Cannify Shop</button>
-             </div>
-             <div class="menu-button">
-                 <button class="btn-primary-header" type="button" href="index-de.html" >De</div>
-             </div>
-                 <div class="only-collapsed collapsed-contact">
-                     <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                   </svg> +49 (0) 241 705 3991</a></span>
-                   <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                   </svg> info@cannify.de</a></span>
-               </div>
-             </div>
-             <!-- /Collapsed-Show -->
-             </div>
-         </nav>
-         <div class="about-us-bg-video">
-             <div class="headline-container">
-                 <div class="about-us-headline-block">
-                     <h1>
-                         <span class="p-0 m-0">
-                           <span class="p-0 m-0">Medical Cannabis.</span>
-                         </span>
-                       </h1>
-                       <p>
+                <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg> info@cannify.de</a></span>
+            </div>
+            <div class="header-buttons">
+                <button OnClick=" location.href='login.html'" class="btn-primary-header login-circle">HCP Login</button>
+            <button OnClick=" location.href='cannify-shop.html'" class="btn-primary-header">Cannify Shop</button>
+                <button class="btn-primary-header" type="button">De</div>
+            </div>
+        </div>
+        <div class="header-breakline"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg" style="z-index: 9;">
+            <div class="container-fluid p-0">
+            <a href="index.html" class="navbar-brand"><img width="190" height="50px" src="./img/cannify-logo-white.png" alt="Cannify Logo"></a>
+    
+            <button id="mob-menu" class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+            </button>
+            <div class="collapse navbar-collapse navbar-content" id="navmenu">
+            <ul class="navbar-nav navitem-text" >
+                <div class="nav-breakline"></div>
+                <li class="nav-item">
+                    <span>
                         <span>
-                            <span>
-                                Despite all of these scientifically proven positive effects, cannabis does not have a good reputation among doctors and patients.
-                          </span>
-                        </span>
-                    </p>
-                    <div class="magnetic"><button type="button" class="btn btn-shop marginless-button">Our Blog</button></div>
-                 </div>
-             </div>
-          <img class="img-responsive w-100" style="object-fit: cover; object-position: center center;" src="./img/about-us-image.png" alt="About Us">
-         </div>
- </section>
- <!-- HEADER CLOSED -->
-    <section class="reveal-section">
-        <section class="medical-cannabis-general-section tb-section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="medical-cannabis-general-info">
-                        <span>® Cannify Pharma GbmH</span>
-                        <p>Medical Cannabis Distributor</p>
-                        <div class="black-breakline"></div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="sticky-selector">
-                            <div class="section-selector">
-                                <ul class="list-section-selector">  
-                                    <li type="button"><a class="se-nav-item selector-link " href="#what-is-medical-cannabis">What is Medical Cannabis?</a></li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#the-endocannabinoid-system">The Endocannabinoid System.</a> </li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#cannabis-and-the-endocannabinoid-system">Cannabis and the Endocannabinoid system.</a></li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#treatment-with-medical-cannabis">Treatment with Medical Cannabis.</a></li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#treatment-options">Treatment Options / Deseases.</a></li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#when-to-consider-medical-cannabis">When to Consider Medical Cannabis?</a></li>
-                                    <li type="button"><a class="se-nav-item selector-link " href="#cannabis-law">Cannabis Law.</a></li>
-                                </ul>
-                            </div>
-                            <div class="shop-contact-block">
-                                <div class="shop-contact-block-content">
-                                    <h6>Need Medical Cannbis Information or assistance?</h6>
-                                    <span class="contact-tel-email">Telefon: <a href="tel:+49 (0) 241 98092730">+49 (0) 241 98092730</a></span>
-                                    <p>(Montag-Freitag,8-18 Uhr)</p>
-                                    <span class="contact-tel-email">E-Mail: <a href = "mailto:bestellung@cannify.de">bestellung@cannify.de</a></span>
-                                </div>
-                                <button type="button" class="btn btn-shop">Get in touch with us</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-8">
-                        <div class="section-page" id="what-is-medical-cannabis">
-                            <h2>What is Medical Cannabis?</h2>
-                            <p>Medical cannabis (also known as medicinal cannabis or medical marijuana) refers to the use of the cannabis plant and its component cannabinoids (THC, CBD, CBC, etc.) as medical therapy to alleviate symptoms. There are more than 500 components found within the cannabis plant, including over 110 cannabinoid compounds, which are thought to be responsible for most of the plant’s therapeutic benefits. </p>
-                            <p>Cannabinoids are found in resin, most abundant in the female flower head, which is used in the manufacture of medicinal cannabis products. These plant cannabinoids mimic the naturally occurring cannabinoids within the human body, and act predominantly through our endocannabinoid system.</p>
-                            <br>
-                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                <div class="qualities-horizontal-img">
-                                    <img src="./img/marijuana.png" alt="Cannabis">
-                                </div>
-                                <div class="qualities-text">
-                                    <h5>Cannabis Sativa</h5>
-                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                </div>
-                            </div>
-                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                <div class="qualities-horizontal-img">
-                                    <img src="./img/marijuana.png" alt="Cannabis">
-                                </div>
-                                <div class="qualities-text">
-                                    <h5>Cannabis Indica</h5>
-                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                </div>
-                            </div>
-                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                <div class="qualities-horizontal-img">
-                                    <img src="./img/marijuana.png" alt="Cannabis">
-                                </div>
-                                <div class="qualities-text">
-                                    <h5>Hybrid</h5>
-                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                </div>
-                            </div>
-                            <div class="medical-cannabis-general-quality-card">
-                                <h6>Indica vs Sativa</h6>
-                                <p><span>Cannabis sativa</span> and <span>Cannabis indica</span> are used today in various hybrid breedings to generate different chemotypes. These have either a high THC and low CBD content, or vice versa, a high CBD and low THC content. The third chemotype is an intermediate form with balanced concentrations of THC and CBD. </p>
-                            </div>
-                        </div>
-                        <div class="section-page tb-section-padding" id="the-endocannabinoid-system">
-                            <div class="black-breakline"></div>
-                            <h2>The Endocannabinoid System.</h2>
-                            <p>The endocannabinoid system (ECS) is a biological system of our body that can interact with endogenous cannabinoids to regulate vital processes. However, this interaction is not limited to endocannabinoids: plant cannabinoids, known as phytocannabinoids, can also interact with this system. The ECS is thus the biological basis for externally supplied cannabinoids to exert their effects in our bodies.</p>
-                            <div class="row cb-receptors-row">
-                                <div class="col-md-4">
-                                    <div class="human-receptors-preview-img">
-                                        <img class="img-responsive w-100" src="./img/receptors-preview.svg" alt="Receptors">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="cb-receptors">
-                                        <div class="cb-receptors-title">
-                                            <h6>CB1 Receptors</h6>
-                                            <img src="./img/green-receptor.svg" alt="Green Receptor">
-                                        </div>
-                                        <ul>
-                                            <li>Motor Activity</li>
-                                            <li>Thinking</li>
-                                            <li>Motor co-ordination</li>
-                                            <li>Appetite</li>
-                                            <li>Short Term Memory</li>
-                                            <li>Pain Perception</li>
-                                            <li>Immune Cells</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="cb-receptors">
-                                        <div class="cb-receptors-title">
-                                            <h6>CB2 Receptors</h6>
-                                            <img src="./img/red-receptor.svg" alt="Red Receptor">
-                                        </div>
-                                        <ul>
-                                            <li>Gut</li>
-                                            <li>Kidneys</li>
-                                            <li>Pancreas</li>
-                                            <li>Adipose Tissue</li>
-                                            <li>Skeletal Muscle</li>
-                                            <li>Bone Health</li>
-                                            <li>Eyes</li>
-                                            <li>Tumors</li>
-                                            <li>Reproductive System </li>
-                                            <li>Immune System </li>
-                                            <li>Skin Heath</li>
-                                            <li>Cardiovascular System </li>
-                                            <li>Liver</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cb-receptors-explanation">
-                                <p><span>CB1 </span>is mostly found in the gonads, glands, organs, connective tissue and central nervous system. </p>
-                                <p><span>CB2 </span>can be found in the peripheral nervous system, particularly in immune cells. </p>
-                                <br>
-                                <p>Endocannabinoids can bind to either receptor. The resulting effect depends on the location of the receptor and which endocannabinoid it connects with. Once bound the endocannabinoid system is kicked into action relieving pain, inflammation or other ailments.</p>
-                            </div>
-                           </div>
-                           <div class="section-page tb-section-padding" id="cannabis-and-the-endocannabinoid-system">
-                               <div class="black-breakline"></div>
-                               <h2>Cannabis and the Endocannabinoid system.</h2>
-                               <p>Cannabis contains over 60 compounds, but the main cannabinoids that interact with the Endocannabinoid System are Tetrahydrocannabinol (THC) and Cannabidiol (CBD).</p>
-                               <div class="row">
-                                   <div class="col-lg-6">
-                                    <div class="cannabidiol-card">
-                                        <div class="cannabidiol-card-title">
-                                            <h5>THC / Tetrahydrocannabinol </h5>
-                                        </div>
-                                        <div class="cannabidiol-img">
-                                            <img class="img-responsive" src="./img/cannabidiol.png" alt="Cannabidiol">
-                                        </div>
-                                        <div class="cannabidiol-text">
-                                            <p>THC is known as the ‘one that gets you high’ and is the psychoactive cannabinoid. It binds to both CB1 and CB2 receptors which makes it very useful for medicinal purposes.</p>
-                                            <ul>
-                                                <li>Potential intoxicating effect</li>
-                                                <li>Pain-relieving and anti-inflammatory properties</li>
-                                                <li>May have sedative properties</li>
-                                                <li>Reduces nausea and vomiting & stimulate appetite</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                   </div>
-                                   <div class="col-lg-6">
-                                    <div class="cannabidiol-card">
-                                        <div class="cannabidiol-card-title">
-                                            <h5>CBD / Cannabidiol  </h5>
-                                        </div>
-                                        <div class="cannabidiol-img">
-                                            <img class="img-responsive" src="./img/cannabidiol.png" alt="Cannabidiol">
-                                        </div>
-                                        <div class="cannabidiol-text">
-                                            <p>Cannabidiol (CBD)  does not seem to react the same way as THC. Instead, researchers theorise that it prevents endocannabinoids from being broken down, thus having a greater effect. It does not cause a ‘high’ and is therefore considered ‘non-psychoactive’. </p>
-                                            <ul>
-                                                <li>Potential intoxicating effectNon-intoxicating</li>
-                                                <li>May reduce anxiety</li>
-                                                <li>Anti-convulsant properties</li>
-                                                <li>Modulates effects of THC</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="section-page tb-section-padding" id="treatment-with-medical-cannabis">
-                               <div class="black-breakline"></div>
-                               <h2>Treatment with Medical Cannabis.</h2>
-                               <p>Medical cannabis is not currently available as a first line treatment.  It can only be prescribed after conventional therapy has failed or is found to be not suitable (eg adverse effects) or ineffective.</p>
-                                <img class="img-responsive w-100 treatment-with-medical-cannabis-img" src="./img/drop-in-hand-img.png" alt="Cannabis Drop">
-                                <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                    <div class="qualities-horizontal-img">
-                                        <img src="./img/marijuana.png" alt="Cannabis">
-                                    </div>
-                                    <div class="qualities-text">
-                                        <h5>Oral</h5>
-                                        <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                    </div>
-                                </div>
-                                <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                    <div class="qualities-horizontal-img">
-                                        <img src="./img/marijuana.png" alt="Cannabis">
-                                    </div>
-                                    <div class="qualities-text">
-                                        <h5>Inhalation / Vaporisation</h5>
-                                        <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                    </div>
-                                </div>
-                                <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
-                                    <div class="qualities-horizontal-img">
-                                        <img src="./img/marijuana.png" alt="Cannabis">
-                                    </div>
-                                    <div class="qualities-text">
-                                        <h5>Transdermal</h5>
-                                        <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="section-page tb-section-padding" id="treatment-options">
-                               <div class="black-breakline"></div>
-                            <h2>Treatment Options / Deseases.</h2>
-                            <p>Even though Germany has created a new Cannabis Agency to oversee medical marijuana production in the country, it doesn’t manage prescriptions. They will receive anonymous data about the types of prescriptions issued to make sure there is no misuse. However, to get a prescription for cannabis, patients will deal directly with their physicians — there are no medical marijuana cards.</p>
-                            <div class="row employee-benefits-row">
-                        <div class="col-lg-3">
-                            <div class="employee-benefits">
-                                <span>Conditions Treated</span>
-                                <p>by Medical Cannabis</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="employee-faq">
-                                <div class="employee-accordion">
-                                    <div class="employee-accordion-item">
-                                      <button id="employee-accordion-button" aria-expanded="true"><span class="employee-accordion-title">Alzheimer's disease</span><span class="icon" aria-hidden="true"></span></button>
-                                      <div class="employee-accordion-content">
-                                        <p>Reviews research indicating therapies currently used in patients with late-onset Alzheimer’s disease and related neuropsychiatric symptoms are frequently ineffective. Describes in vitro and in vivo studies of cannabinoids as treatment.</p>
-                                        <span>Further Resources:</span>
-                                        <a class="white-button-link" href="#"><div class="white-button-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Evidence for Therapeutic Properties of (CBD) for Alzheimer's Disease </span></div></a>
-                                        <a class="white-button-link" href="#"><div class="white-button-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabinoids for the treatment of aggression in Alzheimer's disease </span></div></a>
-                                      </div>
-                                    </div>
-                                    <div class="employee-accordion-item">
-                                      <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Crohn's disease</span><span class="icon" aria-hidden="true"></span></button>
-                                      <div class="employee-accordion-content">
-                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                      </div>
-                                    </div>
-                                    <div class="employee-accordion-item">
-                                      <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Epilepsy</span><span class="icon" aria-hidden="true"></span></button><div class="employee-accordion-content">
-                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                      </div>
-                                    </div>
-                                    <div class="employee-accordion-item">
-                                      <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Multiple sclerosis</span><span class="icon" aria-hidden="true"></span></button>
-                                      <div class="employee-accordion-content">
-                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                      </div>
-                                    </div>
-                                    <div class="employee-accordion-item">
-                                      <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Muscle spasms</span><span class="icon" aria-hidden="true"></span></button>
-                                      <div class="employee-accordion-content">
-                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                      </div>
-                                    </div>
-                                    <div class="employee-accordion-item">
-                                        <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Seizures</span><span class="icon" aria-hidden="true"></span></button>
-                                        <div class="employee-accordion-content">
-                                          <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                        </div>
-                                      </div>
-                                      <div class="employee-accordion-item">
-                                        <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Appetite loss</span><span class="icon" aria-hidden="true"></span></button>
-                                        <div class="employee-accordion-content">
-                                          <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                        </div>
-                                      </div>
-                                      <div class="employee-accordion-item">
-                                        <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Cancer</span><span class="icon" aria-hidden="true"></span></button>
-                                        <div class="employee-accordion-content">
-                                          <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                        </div>
-                                      </div>
-                                      <div class="employee-accordion-item">
-                                        <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Glaucoma</span><span class="icon" aria-hidden="true"></span></button>
-                                        <div class="employee-accordion-content">
-                                          <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                        </div>
-                                      </div>
-                                      <div class="employee-accordion-item">
-                                        <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Wasting syndrome (cachexia)</span><span class="icon" aria-hidden="true"></span></button>
-                                        <div class="employee-accordion-content">
-                                          <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
-                                        </div>
-                                      </div>
-                                  </div>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="section-page tb-section-padding" id="when-to-consider-medical-cannabis">
-                            <div class="black-breakline"></div>
-                            <h2>When to consider Medical Cannabis?</h2>
-                            <p>The research around cannabis is still growing and the products, doses and research methods used vary between studies. This makes a medical practitioner’s role complicated when it comes to advice on how to best use medicinal cannabis products. </p>
-                            <p>The Therapeutic Goods Administration (TGA) advises that in most cases, medicinal cannabis should be used only when registered treatments have been tried and failed to manage conditions or have been unable to be tolerated.</p>
-                        </div>
-                        <div class="section-page" id="cannabis-law">
-                            <div class="black-breakline"></div>
-                            <div class="cannabis-law-text">
-                            <h2>Cannabis Law.</h2>
-                            <img class="img-responsive w-100" src="./img/cannabis-law-img.png" alt="Cannabis Law">
-                            <p>Medical cannabis has been used in the treatment of numerous diseases for many thousands of years. That only changed with the Opium Convention of 1929, which banned cannabis in Germany. This legal provision was only changed a few years ago. Namely with the law "passed in Germany in 2017 Cannabis as Medicine". The declared aim of the federal government is to improve the palliative treatment options for patients. </p>
-                            <p>According to the cannabis law, the flowers can officially be used as medicinal products. However, the doctor must ensure that all conventional means of combating the disease or alleviating symptoms have already been exhausted. Only under these circumstances are cannabinoid drugs available to patients on a prescription.</p>
-                            </div>
-                            <div class="cannabis-law-info">
-                                <span>Further Resources:</span>
-                                <p>Cannabis Law</p>
-                            </div>
-                            <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabis law and legislation in Germany </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>CMS Expert Guides</p></div></div></a>
-                            <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Medicinal use of cannabis based products and cannabinoids </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>The BMJ</p></div></div></a>
-                            <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabinoid-based drugs as anti-inflammatory therapeutics </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>Nature Reviews</p></div></div></a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tb-section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="info">
-                        <span>Interested to learn more?</span>
-                        <p>Find further information.</p>
-                        <div class="black-breakline"></div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="patient-card">
-                            <div><img class="img-responsive w-100" src="./img/patient.png" alt="Patient"></div>
-                            <div class="patient-card-body">
-                                <div><h5>For Patients</h5></div>
-                                <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
-                                <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                  </svg></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="patient-card">
-                            <div><img class="img-responsive w-100" src="./img/for-pharmacists.png" alt="Pharmacist"></div>
-                            <div class="patient-card-body">
-                                <div><h5>For Pharmacist</h5></div>
-                                <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
-                                <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                  </svg></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="patient-card">
-                            <div><img class="img-responsive w-100" src="./img/for-doctors.png" alt="Doctor"></div>
-                            <div class="patient-card-body">
-                                <div><h5>For Doctors</h5></div>
-                                <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
-                                <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                  </svg></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img class="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
 
-        <div class="container-fluid footer-graphic m-0 p-0"></div>
-        <section class="footer-section section-padding tb-section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 contact-col">
-                        <img class="img-responsive mb-5" width="75px" height="90px" src="./img/cannify-symbol.svg" alt="Cannify Symbol">
-                        <br>
-                        <span>® Cannify Pharma GmbH</span>
-                        <p>Theaterplatz 2, D-52062 Aachen</p>
-                        –<br>
-                        <p><span>Telefon:</span> <a href="tel:+49 (0) 241 7053991">+49 (0) 241 7053991</a></p> 
-                        <p><span>Telefax:</span><a href="tel:+49 (0) 241 70539920">+49 (0) 241 70539920</a></p>
-                        <p><span>E-Mail:</span><a href = "mailto:info@cannify.de"> info@cannify.de </a></p>
-                    </div>
-                    <div class="col-md-2 contact-col-1">
-                        <div class="footer-categories">Company</div>
-                        <a href="about-us.html">About Us </a>
-                        <a href="gmp-certificate.html">GMP Certificate </a>
-                        <a href="downloads.html">Downloads</a>
-                        <a href="careers.html">Careers</a>
-                        <a href="cannify-shop.html">Cannify Shop</a>
-                        <a href="contact-us.html">Contact Us</a>
-                    </div>
-                    <div class="col-md-2 contact-col-1">
-                        <div class="footer-categories">Knowledge</div>
-                        <a href="medical-cannabis-general.html">Medical Cannabis</a>
-                        <a href="for-patients.html">For Patients</a>
-                        <a href="for-pharmacists.html">For Pharmacist</a>
-                        <a href="for-doctors.html">For Doctors</a>
-                    </div>
-                    <div class="col-md-2 contact-col-1">
-                        <div class="footer-categories">Legal</div>
-                        <a href="impressum.html">Impressum</a>
-                        <a href="cookies.html">Cookies</a>
-                        <a href="shipping.html">Shipping</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-and-conditions.html">Terms & Conditions</a>
-                    </div>
-                    <div class="col-md-2 contact-col-1">
-                        <div class="footer-categories">Membership</div>
-                        <img class="w-50 img-responsive m-2" src="./img/can-med.png" alt="Cannabinoid Medicines">
-                        <img class="w-50 img-responsive m-2" src="./img/bpc.png" alt="BPC">
-                        <br>
-                        <img class="w-50 img-responsive m-2" src="./img/vca.png" alt="VCA">
+                        <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./about-us.html">About Us</a>
+                            <a class="dropdown-item" href="#">GMP Certificate</a>
+                            <a class="dropdown-item" href="downloads.html">Downloads</a>
+                            <a class="dropdown-item" href="careers.html">Careers</a>
+                        </div>
+
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <span>
+                        <span>
+                <a href="cannify-products.html" class="nav-link nav-link-ltr">Products</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <span>
+                        <span>
+                    <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img class="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                        
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="medical-cannabis-general.html">General Information</a>
+                            <a class="dropdown-item" href="for-patients.html">For Patients</a>
+                            <a class="dropdown-item" href="for-pharmacists.html">For Pharmacist</a>
+                            <a class="dropdown-item" href="for-doctors.html">For Doctors</a>
+                        </div>
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <span>
+                        <span>
+                    <a href="cannify-blogs.html" class="nav-link nav-link-ltr">Insights</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <span>
+                        <span>
+                    <a href="contact-us.html" class="nav-link nav-link-ltr">Contact</a>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <!-- Collapsed-Show -->
+            <div class="header-buttons only-collapsed collapsed-buttons">
+                <div class="menu-button">
+                <button OnClick=" location.href='login.html'" class="btn-primary-header login-circle">HCP Login</button>
+            </div>
+            <div class="menu-button">
+            <button OnClick=" location.href='cannify-shop.html'" class="btn-primary-header">Cannify Shop</button>
+            </div>
+            <div class="menu-button">
+                <button class="btn-primary-header" type="button" href="index-de.html" >De</div>
+            </div>
+                <div class="only-collapsed collapsed-contact">
+                    <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg> +49 (0) 241 705 3991</a></span>
+                <span class="contact-tel-email">Email <br> <a href = "mailto:info@cannify.de"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg> info@cannify.de</a></span>
+            </div>
+            </div>
+            <!-- /Collapsed-Show -->
+            </div>
+        </nav>
+        <div class="about-us-bg-video">
+            <div class="headline-container">
+                <div class="about-us-headline-block">
+                    <h1>
+                        <span class="p-0 m-0">
+                        <span class="p-0 m-0">Medical Cannabis.</span>
+                        </span>
+                    </h1>
+                    <p>
+                    <span>
+                        <span>
+                            Despite all of these scientifically proven positive effects, cannabis does not have a good reputation among doctors and patients.
+                        </span>
+                    </span>
+                </p>
+                <div class="magnetic"><button type="button" class="btn btn-shop marginless-button">Our Blog</button></div>
+                </div>
+            </div>
+        <img class="img-responsive w-100" style="object-fit: cover; object-position: center center;" src="./img/about-us-image.png" alt="About Us">
+        </div>
+</section>
+<!-- HEADER CLOSED -->
+<section class="reveal-section">
+    <section class="medical-cannabis-general-section tb-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="medical-cannabis-general-info">
+                    <span>® Cannify Pharma GbmH</span>
+                    <p>Medical Cannabis Distributor</p>
+                    <div class="black-breakline"></div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sticky-selector">
+                        <div class="section-selector">
+                            <ul class="list-section-selector">  
+                                <li type="button"><a class="se-nav-item selector-link " href="#what-is-medical-cannabis">What is Medical Cannabis?</a></li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#the-endocannabinoid-system">The Endocannabinoid System.</a> </li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#cannabis-and-the-endocannabinoid-system">Cannabis and the Endocannabinoid system.</a></li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#treatment-with-medical-cannabis">Treatment with Medical Cannabis.</a></li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#treatment-options">Treatment Options / Deseases.</a></li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#when-to-consider-medical-cannabis">When to Consider Medical Cannabis?</a></li>
+                                <li type="button"><a class="se-nav-item selector-link " href="#cannabis-law">Cannabis Law.</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop-contact-block">
+                            <div class="shop-contact-block-content">
+                                <h6>Need Medical Cannbis Information or assistance?</h6>
+                                <span class="contact-tel-email">Telefon: <a href="tel:+49 (0) 241 98092730">+49 (0) 241 98092730</a></span>
+                                <p>(Montag-Freitag,8-18 Uhr)</p>
+                                <span class="contact-tel-email">E-Mail: <a href = "mailto:bestellung@cannify.de">bestellung@cannify.de</a></span>
+                            </div>
+                            <button type="button" class="btn btn-shop">Get in touch with us</button>
+                        </div>
                     </div>
                 </div>
-                <div class="row last-row footer-last-row">
-                    <div class="col-md-12">
-                    <hr>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="index.html"><img class="img-responsive footer-logo" width="167" height="48" src="./img/cannify-logo.svg" alt="Cannify Logo"></a>
-                    </div>
-                    <div class="col-md-4">
-                        <span>© 2021 Cannify Pharma GmbH</span>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-8">
+                    <div class="section-page" id="what-is-medical-cannabis">
+                        <h2>What is Medical Cannabis?</h2>
+                        <p>Medical cannabis (also known as medicinal cannabis or medical marijuana) refers to the use of the cannabis plant and its component cannabinoids (THC, CBD, CBC, etc.) as medical therapy to alleviate symptoms. There are more than 500 components found within the cannabis plant, including over 110 cannabinoid compounds, which are thought to be responsible for most of the plant’s therapeutic benefits. </p>
+                        <p>Cannabinoids are found in resin, most abundant in the female flower head, which is used in the manufacture of medicinal cannabis products. These plant cannabinoids mimic the naturally occurring cannabinoids within the human body, and act predominantly through our endocannabinoid system.</p>
                         <br>
-                        <a href="privacy-policy.html"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
-                             Privacy Policy</a> / <a href="terms-and-conditions.html">Terms & Conditions</a> / <a href="impressum.html">Impressum</a>
+                        <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                            <div class="qualities-horizontal-img">
+                                <img src="./img/marijuana.png" alt="Cannabis">
+                            </div>
+                            <div class="qualities-text">
+                                <h5>Cannabis Sativa</h5>
+                                <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                            </div>
+                        </div>
+                        <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                            <div class="qualities-horizontal-img">
+                                <img src="./img/marijuana.png" alt="Cannabis">
+                            </div>
+                            <div class="qualities-text">
+                                <h5>Cannabis Indica</h5>
+                                <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                            </div>
+                        </div>
+                        <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                            <div class="qualities-horizontal-img">
+                                <img src="./img/marijuana.png" alt="Cannabis">
+                            </div>
+                            <div class="qualities-text">
+                                <h5>Hybrid</h5>
+                                <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                            </div>
+                        </div>
+                        <div class="medical-cannabis-general-quality-card">
+                            <h6>Indica vs Sativa</h6>
+                            <p><span>Cannabis sativa</span> and <span>Cannabis indica</span> are used today in various hybrid breedings to generate different chemotypes. These have either a high THC and low CBD content, or vice versa, a high CBD and low THC content. The third chemotype is an intermediate form with balanced concentrations of THC and CBD. </p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="social-media-footer">
-                            <span>Social Media</span>
+                    <div class="section-page tb-section-padding" id="the-endocannabinoid-system">
+                        <div class="black-breakline"></div>
+                        <h2>The Endocannabinoid System.</h2>
+                        <p>The endocannabinoid system (ECS) is a biological system of our body that can interact with endogenous cannabinoids to regulate vital processes. However, this interaction is not limited to endocannabinoids: plant cannabinoids, known as phytocannabinoids, can also interact with this system. The ECS is thus the biological basis for externally supplied cannabinoids to exert their effects in our bodies.</p>
+                        <div class="row cb-receptors-row">
+                            <div class="col-md-4">
+                                <div class="human-receptors-preview-img">
+                                    <img class="img-responsive w-100" src="./img/receptors-preview.svg" alt="Receptors">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cb-receptors">
+                                    <div class="cb-receptors-title">
+                                        <h6>CB1 Receptors</h6>
+                                        <img src="./img/green-receptor.svg" alt="Green Receptor">
+                                    </div>
+                                    <ul>
+                                        <li>Motor Activity</li>
+                                        <li>Thinking</li>
+                                        <li>Motor co-ordination</li>
+                                        <li>Appetite</li>
+                                        <li>Short Term Memory</li>
+                                        <li>Pain Perception</li>
+                                        <li>Immune Cells</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cb-receptors">
+                                    <div class="cb-receptors-title">
+                                        <h6>CB2 Receptors</h6>
+                                        <img src="./img/red-receptor.svg" alt="Red Receptor">
+                                    </div>
+                                    <ul>
+                                        <li>Gut</li>
+                                        <li>Kidneys</li>
+                                        <li>Pancreas</li>
+                                        <li>Adipose Tissue</li>
+                                        <li>Skeletal Muscle</li>
+                                        <li>Bone Health</li>
+                                        <li>Eyes</li>
+                                        <li>Tumors</li>
+                                        <li>Reproductive System </li>
+                                        <li>Immune System </li>
+                                        <li>Skin Heath</li>
+                                        <li>Cardiovascular System </li>
+                                        <li>Liver</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cb-receptors-explanation">
+                            <p><span>CB1 </span>is mostly found in the gonads, glands, organs, connective tissue and central nervous system. </p>
+                            <p><span>CB2 </span>can be found in the peripheral nervous system, particularly in immune cells. </p>
                             <br>
-                            <a href="facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> 
-                                Facebook</a> / <a href="linkedin.com">Linkedin</a> / <a href="twitter.com">Twitter</a>
+                            <p>Endocannabinoids can bind to either receptor. The resulting effect depends on the location of the receptor and which endocannabinoid it connects with. Once bound the endocannabinoid system is kicked into action relieving pain, inflammation or other ailments.</p>
+                        </div>
+                        </div>
+                        <div class="section-page tb-section-padding" id="cannabis-and-the-endocannabinoid-system">
+                            <div class="black-breakline"></div>
+                            <h2>Cannabis and the Endocannabinoid system.</h2>
+                            <p>Cannabis contains over 60 compounds, but the main cannabinoids that interact with the Endocannabinoid System are Tetrahydrocannabinol (THC) and Cannabidiol (CBD).</p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                <div class="cannabidiol-card">
+                                    <div class="cannabidiol-card-title">
+                                        <h5>THC / Tetrahydrocannabinol </h5>
+                                    </div>
+                                    <div class="cannabidiol-img">
+                                        <img class="img-responsive" src="./img/cannabidiol.png" alt="Cannabidiol">
+                                    </div>
+                                    <div class="cannabidiol-text">
+                                        <p>THC is known as the ‘one that gets you high’ and is the psychoactive cannabinoid. It binds to both CB1 and CB2 receptors which makes it very useful for medicinal purposes.</p>
+                                        <ul>
+                                            <li>Potential intoxicating effect</li>
+                                            <li>Pain-relieving and anti-inflammatory properties</li>
+                                            <li>May have sedative properties</li>
+                                            <li>Reduces nausea and vomiting & stimulate appetite</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                <div class="cannabidiol-card">
+                                    <div class="cannabidiol-card-title">
+                                        <h5>CBD / Cannabidiol  </h5>
+                                    </div>
+                                    <div class="cannabidiol-img">
+                                        <img class="img-responsive" src="./img/cannabidiol.png" alt="Cannabidiol">
+                                    </div>
+                                    <div class="cannabidiol-text">
+                                        <p>Cannabidiol (CBD)  does not seem to react the same way as THC. Instead, researchers theorise that it prevents endocannabinoids from being broken down, thus having a greater effect. It does not cause a ‘high’ and is therefore considered ‘non-psychoactive’. </p>
+                                        <ul>
+                                            <li>Potential intoxicating effectNon-intoxicating</li>
+                                            <li>May reduce anxiety</li>
+                                            <li>Anti-convulsant properties</li>
+                                            <li>Modulates effects of THC</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-page tb-section-padding" id="treatment-with-medical-cannabis">
+                            <div class="black-breakline"></div>
+                            <h2>Treatment with Medical Cannabis.</h2>
+                            <p>Medical cannabis is not currently available as a first line treatment.  It can only be prescribed after conventional therapy has failed or is found to be not suitable (eg adverse effects) or ineffective.</p>
+                            <img class="img-responsive w-100 treatment-with-medical-cannabis-img" src="./img/drop-in-hand-img.png" alt="Cannabis Drop">
+                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                                <div class="qualities-horizontal-img">
+                                    <img src="./img/marijuana.png" alt="Cannabis">
+                                </div>
+                                <div class="qualities-text">
+                                    <h5>Oral</h5>
+                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                                </div>
+                            </div>
+                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                                <div class="qualities-horizontal-img">
+                                    <img src="./img/marijuana.png" alt="Cannabis">
+                                </div>
+                                <div class="qualities-text">
+                                    <h5>Inhalation / Vaporisation</h5>
+                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                                </div>
+                            </div>
+                            <div class="medical-cannabis-general-qualities-horizontal qualities-horizontal">
+                                <div class="qualities-horizontal-img">
+                                    <img src="./img/marijuana.png" alt="Cannabis">
+                                </div>
+                                <div class="qualities-text">
+                                    <h5>Transdermal</h5>
+                                    <p>Sque suscipit consectetuer eum cu. Eu debet molestiae vix, sale inani et quo. Cu sit ponderum contentiones, vel ex hinc autem perfecto. Vel te saepe tacimates, eum legere.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-page tb-section-padding" id="treatment-options">
+                            <div class="black-breakline"></div>
+                        <h2>Treatment Options / Deseases.</h2>
+                        <p>Even though Germany has created a new Cannabis Agency to oversee medical marijuana production in the country, it doesn’t manage prescriptions. They will receive anonymous data about the types of prescriptions issued to make sure there is no misuse. However, to get a prescription for cannabis, patients will deal directly with their physicians — there are no medical marijuana cards.</p>
+                        <div class="row employee-benefits-row">
+                    <div class="col-lg-3">
+                        <div class="employee-benefits">
+                            <span>Conditions Treated</span>
+                            <p>by Medical Cannabis</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="employee-faq">
+                            <div class="employee-accordion">
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="true"><span class="employee-accordion-title">Alzheimer's disease</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                    <p>Reviews research indicating therapies currently used in patients with late-onset Alzheimer’s disease and related neuropsychiatric symptoms are frequently ineffective. Describes in vitro and in vivo studies of cannabinoids as treatment.</p>
+                                    <span>Further Resources:</span>
+                                    <a class="white-button-link" href="#"><div class="white-button-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Evidence for Therapeutic Properties of (CBD) for Alzheimer's Disease </span></div></a>
+                                    <a class="white-button-link" href="#"><div class="white-button-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabinoids for the treatment of aggression in Alzheimer's disease </span></div></a>
+                                    </div>
+                                </div>
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Crohn's disease</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                    <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                </div>
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Epilepsy</span><span class="icon" aria-hidden="true"></span></button><div class="employee-accordion-content">
+                                    <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                </div>
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Multiple sclerosis</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                    <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                </div>
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Muscle spasms</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                    <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                </div>
+                                <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Seizures</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                    </div>
+                                    <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Appetite loss</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                    </div>
+                                    <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Cancer</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                    </div>
+                                    <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Glaucoma</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                    </div>
+                                    <div class="employee-accordion-item">
+                                    <button id="employee-accordion-button" aria-expanded="false"><span class="employee-accordion-title">Wasting syndrome (cachexia)</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="employee-accordion-content">
+                                        <p>What every single Cannify employee makes an important contribution to making the lives of patients a little easier. Since your commitment, your expertise and your motivation are essential to fulfill our mission, we offer you:</p>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="section-page tb-section-padding" id="when-to-consider-medical-cannabis">
+                        <div class="black-breakline"></div>
+                        <h2>When to consider Medical Cannabis?</h2>
+                        <p>The research around cannabis is still growing and the products, doses and research methods used vary between studies. This makes a medical practitioner’s role complicated when it comes to advice on how to best use medicinal cannabis products. </p>
+                        <p>The Therapeutic Goods Administration (TGA) advises that in most cases, medicinal cannabis should be used only when registered treatments have been tried and failed to manage conditions or have been unable to be tolerated.</p>
+                    </div>
+                    <div class="section-page" id="cannabis-law">
+                        <div class="black-breakline"></div>
+                        <div class="cannabis-law-text">
+                        <h2>Cannabis Law.</h2>
+                        <img class="img-responsive w-100" src="./img/cannabis-law-img.png" alt="Cannabis Law">
+                        <p>Medical cannabis has been used in the treatment of numerous diseases for many thousands of years. That only changed with the Opium Convention of 1929, which banned cannabis in Germany. This legal provision was only changed a few years ago. Namely with the law "passed in Germany in 2017 Cannabis as Medicine". The declared aim of the federal government is to improve the palliative treatment options for patients. </p>
+                        <p>According to the cannabis law, the flowers can officially be used as medicinal products. However, the doctor must ensure that all conventional means of combating the disease or alleviating symptoms have already been exhausted. Only under these circumstances are cannabinoid drugs available to patients on a prescription.</p>
+                        </div>
+                        <div class="cannabis-law-info">
+                            <span>Further Resources:</span>
+                            <p>Cannabis Law</p>
+                        </div>
+                        <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabis law and legislation in Germany </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>CMS Expert Guides</p></div></div></a>
+                        <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Medicinal use of cannabis based products and cannabinoids </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>The BMJ</p></div></div></a>
+                        <a class="white-button-link-table" href="#"><div class="white-button-link-first-block"><div class="first-button-link-content"><div class="img-circle"><img src="./img/go-to-link-icon.svg" alt="Link"></div><span>Cannabinoid-based drugs as anti-inflammatory therapeutics </span></div></div><div class="white-button-link-second-block"><div class="second-button-link-content"><p>Nature Reviews</p></div></div></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tb-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <span>Interested to learn more?</span>
+                    <p>Find further information.</p>
+                    <div class="black-breakline"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="patient-card">
+                        <div><img class="img-responsive w-100" src="./img/patient.png" alt="Patient"></div>
+                        <div class="patient-card-body">
+                            <div><h5>For Patients</h5></div>
+                            <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
+                            <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="patient-card">
+                        <div><img class="img-responsive w-100" src="./img/for-pharmacists.png" alt="Pharmacist"></div>
+                        <div class="patient-card-body">
+                            <div><h5>For Pharmacist</h5></div>
+                            <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
+                            <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="patient-card">
+                        <div><img class="img-responsive w-100" src="./img/for-doctors.png" alt="Doctor"></div>
+                        <div class="patient-card-body">
+                            <div><h5>For Doctors</h5></div>
+                            <div><p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad, audiam legendos.</p></div>
+                            <div><a class="magnetic text-rotate-plus" href="#" type="button">Find More<svg class="link-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg></a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <div class="container-fluid footer-graphic m-0 p-0"></div>
+    <section class="footer-section section-padding tb-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 contact-col">
+                    <img class="img-responsive mb-5" width="75px" height="90px" src="./img/cannify-symbol.svg" alt="Cannify Symbol">
+                    <br>
+                    <span>® Cannify Pharma GmbH</span>
+                    <p>Theaterplatz 2, D-52062 Aachen</p>
+                    –<br>
+                    <p><span>Telefon:</span> <a href="tel:+49 (0) 241 7053991">+49 (0) 241 7053991</a></p> 
+                    <p><span>Telefax:</span><a href="tel:+49 (0) 241 70539920">+49 (0) 241 70539920</a></p>
+                    <p><span>E-Mail:</span><a href = "mailto:info@cannify.de"> info@cannify.de </a></p>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Company</div>
+                    <a href="about-us.html">About Us </a>
+                    <a href="gmp-certificate.html">GMP Certificate </a>
+                    <a href="downloads.html">Downloads</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="cannify-shop.html">Cannify Shop</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Knowledge</div>
+                    <a href="medical-cannabis-general.html">Medical Cannabis</a>
+                    <a href="for-patients.html">For Patients</a>
+                    <a href="for-pharmacists.html">For Pharmacist</a>
+                    <a href="for-doctors.html">For Doctors</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Legal</div>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="cookies.html">Cookies</a>
+                    <a href="shipping.html">Shipping</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                </div>
+                <div class="col-md-2 contact-col-1">
+                    <div class="footer-categories">Membership</div>
+                    <img class="w-50 img-responsive m-2" src="./img/can-med.png" alt="Cannabinoid Medicines">
+                    <img class="w-50 img-responsive m-2" src="./img/bpc.png" alt="BPC">
+                    <br>
+                    <img class="w-50 img-responsive m-2" src="./img/vca.png" alt="VCA">
+                </div>
+            </div>
+            <div class="row last-row footer-last-row">
+                <div class="col-md-12">
+                <hr>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html"><img class="img-responsive footer-logo" width="167" height="48" src="./img/cannify-logo.svg" alt="Cannify Logo"></a>
+                </div>
+                <div class="col-md-4">
+                    <span>© 2021 Cannify Pharma GmbH</span>
+                    <br>
+                    <a href="privacy-policy.html"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+                            Privacy Policy</a> / <a href="terms-and-conditions.html">Terms & Conditions</a> / <a href="impressum.html">Impressum</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-media-footer">
+                        <span>Social Media</span>
+                        <br>
+                        <a href="facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> 
+                            Facebook</a> / <a href="linkedin.com">Linkedin</a> / <a href="twitter.com">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
@@ -597,7 +597,7 @@
 
 <!-- FAQ -->
 <script>
-    const faq2items = document.querySelectorAll(".employee-accordion button");
+const faq2items = document.querySelectorAll(".employee-accordion button");
 
 function toggleAccordion() {
 const itemToggle = this.getAttribute('aria-expanded');

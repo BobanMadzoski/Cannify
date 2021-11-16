@@ -15,19 +15,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--headlines-color);
 }
 h1{
-    font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (2000 - 300))) !important;
+    font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (2400 - 300))) !important;
     line-height: 1;
     letter-spacing: -2px;
     font-weight: 400;
 }
 h2{
-    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2400 - 300))) !important;
+    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2600 - 300))) !important;
     line-height: 1;
     letter-spacing: -1.5px;
     font-weight: 400;
 }
 h3{
-    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (2400 - 300))) !important;
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (2600 - 300))) !important;
     line-height: 1;
     letter-spacing: -1px;
     font-weight: 400;
@@ -51,7 +51,7 @@ h6{
     font-weight: 500;
 }
 .h2{
-    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2400 - 300))) !important;
+    font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (2600 - 300))) !important;
     line-height: 1;
     letter-spacing: -1.5px;
     font-weight: 400;
@@ -364,7 +364,6 @@ h6{
 }
 .cannify-shop-header-section{
     background-color: var(--green-haze);
-    height: 60vh;
 }
 .product-section-more-info span{
     font-weight: 600;
@@ -489,6 +488,9 @@ h6{
     border-bottom: none;
 }
   @media (max-width: 992px) {
+    .search-bar {
+        width: 100% !important;
+      }
     .cannify-shop-headline-block {
         max-width: 100% !important;
     }
@@ -989,7 +991,6 @@ p{
 .contact-col a:hover{
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: -0.5px;
     color: #000;
     transition: all .1s ease-in-out;
     text-decoration: none;
@@ -2533,6 +2534,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5% 0%;
 }
 .cannify-shop-headline-container h1{
     color: #fff;
@@ -2549,7 +2551,7 @@ p{
     flex-direction: column;
     align-items: center;
 }
-form {
+.search-bar {
     display: inline-block;
     margin: 0 auto;
     width: 50%;
@@ -3807,6 +3809,13 @@ form {
       color: #717171;
       font-size: 14px;
   }
+  .contact-content a{
+      font-weight: 300;
+  }
+  .contact-content a:hover{
+      font-weight: 300;
+      text-decoration: underline;
+  }
   .contact-us-form{
         width: 100%;
         display: flex;
@@ -3896,3 +3905,23 @@ textarea:focus::placeholder {
   .privacy-policy-column h2{
       margin-bottom: 20px;
   }
+  .job-opening-location{
+      display: flex;
+  }
+  .job-opening-location span:last-child{
+      font-weight: 300;
+  }
+  .job-opening-worktime{
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.job-opening-worktime span:last-child{
+    font-weight: 300;
+}
+.third-headline span{
+    font-weight: 600;
+}
+.third-headline-row{
+    align-items: flex-end;
+}

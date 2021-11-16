@@ -1,12 +1,9 @@
-window.onload = function() {
-
-//Page Animations
 
 //Header Animations
-gsap.fromTo(".header-breakline", {duration: 0.7, opacity: 0, width: 0}, {duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
-gsap.fromTo(".nav-item , .navbar-brand", { delay: 0.7,  duration: 0.5, opacity: 0 ,stagger: 0.03, y: 50, ease: "slow (0.9 , 4, false)" }, { delay: 0.7,duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
-gsap.fromTo(".header-contact > span", { delay: 0.7,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 0.7,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
-gsap.fromTo(".header-buttons > button", { delay: 1,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 1,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
+gsap.fromTo(".header-breakline", {delay: 2,duration: 0.7, opacity: 0, width: 0}, {delay: 2, duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
+gsap.fromTo(".nav-item , .navbar-brand", { delay: 2,  duration: 0.5, opacity: 0 ,stagger: 0.03, y: 50, ease: "slow (0.9 , 4, false)" }, { delay: 2,duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
+gsap.fromTo(".header-contact > span", { delay: 2,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 2,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
+gsap.fromTo(".header-buttons > button", { delay: 2,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 2,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
 //Header Animations
 
 //Text Animations
@@ -14,8 +11,7 @@ gsap.from("h1 span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Powe
 gsap.from("p span>span", {duration: 1.5,delay: 1,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
 gsap.from(".cannify-products-headline-container p", {duration: 1.5, delay: 2, opacity:0})
 gsap.from(".cannify-products-headline-container button", {duration: 1.5, delay: 2.5, opacity:0})
-gsap.from(".cannify-shop-headline-container p", {duration: 1.5, delay: 2, opacity:0})
-gsap.from(".cannify-shop-headline-container form", {duration: 1.5, delay: 2.5, opacity:0})
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,11 +42,7 @@ ScrollTrigger.batch(".reveal-section span", {onEnter : batch => gsap.from(batch,
  //Work Process Animations
 
 
-    //Year Animationss
-    //Year Animations
-
 //Page Animations
-} 
 
 //Hamburger Menu Animations
 var $hamburger = $('#mob-menu');

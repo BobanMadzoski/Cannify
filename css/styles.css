@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 
-
-
-
 body{
     background-color: var(--pampas-white);
     transition: background-color 1s ease;
@@ -61,6 +58,17 @@ h6{
 }
 .dropdown-item{
     line-height: 40px !important;
+}
+.section-info-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-btn{
+    color: #000 !important;
+    padding: 10px 25px !important;
+}
+.blog-btn:hover{
+    color: #fff !important;
 }
 .dropdown-menu{
     border: none !important;
@@ -353,7 +361,6 @@ h6{
 }
 .cannify-blogs-header-section{
     background-color: var(--green-haze);
-    height: 60vh;
 }
 .cannify-shop-header-section{
     background-color: var(--green-haze);
@@ -2230,6 +2237,9 @@ p{
 .about-us-headline-block{
     max-width: 50%;
 }
+.fourth-section .col-md-5 p{
+    margin: 20px 0px;
+}
 .list-section-selector{
     list-style: none;
     font-size: 14px;
@@ -3689,16 +3699,39 @@ form {
   .blog-post-share{
       display: flex;
       flex-direction: column;
+      margin-bottom: 20px;
   }
   .blog-post-share span{
     font-size: 14px;
-    font-weight: 600;
+    color: #717171;
   }
-  .share-links a{
+  .blog-post-share a{
+      font-size: 16px;
+      color: #0D2620;
+  }
+  .blog-post-share a:hover{
       text-decoration: none;
+    } 
+    .blog-tags{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .blog-tags span{
       font-size: 14px;
-      color: #000;
-  }
+      color: #717171;
+    }
+    .blog-tags a{
+        font-size: 16px;
+        color: #0D2620;
+    }
+    .blog-tags a:hover{
+        text-decoration: none;
+      }
+      .tag-links{
+          max-width: 60%;
+      }
   .blog-quote-block{
       padding: 30px;
       border-left: 5px solid var(--green-haze);
@@ -3756,10 +3789,8 @@ form {
   .prev-next-links a{
       font-size: 16px;
       text-decoration: none;
-      font-weight: 600;
-      color: #000;
-      padding: 20px 0px
-      ;
+      color: #717171;
+      padding: 20px 0px;
   }
   .contact-col-sticky{
       position: relative;
